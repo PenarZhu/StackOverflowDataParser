@@ -1,0 +1,3379 @@
+<?xml version="1.0"?><add>
+
+<doc>
+	<field name="Id">4</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">7</field>
+	<field name="CreationDate">2008-07-31T21:42:52.667</field>
+	<field name="Score">491</field>
+	<field name="ViewCount">31416</field>
+	<field name="Body">&lt;p&gt;I want to use a track-bar to change a form's opacity.&lt;/p&gt;
+
+&lt;p&gt;This is my code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;decimal trans = trackBar1.Value / 5000;
+this.Opacity = trans;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When I buil d the application, it gives the following error:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cannot implicitly convert type 'decimal' to 'double'.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I tried using &lt;code&gt;trans&lt;/code&gt; and &lt;code&gt;double&lt;/code&gt; but then the control doesn't work. This code worked fine in a past VB.NET project. &lt;/p&gt;
+</field>
+	<field name="OwnerUserId">8</field>
+	<field name="LastEditorUserId">126970</field>
+	<field name="LastEditorDisplayName">Rich B</field>
+	<field name="LastEditDate">2017-03-10T15:18:33.147</field>
+	<field name="LastActivityDate">2017-03-10T15:18:33.147</field>
+	<field name="Title">While applying opacity to a form should we use a decimal or double value?</field>
+	<field name="Tags">&lt;c#&gt;&lt;winforms&gt;&lt;type-conversion&gt;&lt;decimal&gt;&lt;opacity&gt;</field>
+	<field name="AnswerCount">13</field>
+	<field name="CommentCount">4</field>
+	<field name="FavoriteCount">37</field>
+	<field name="CommunityOwnedDate">2012-10-31T16:42 :47.213</field>
+</doc>
+
+<doc>
+	<field name="Id">6</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">31</field>
+	<field name="CreationDate">2008-07-31T22:08:08.620</field>
+	<field name="Score">217</field>
+	<field name="ViewCount">14712</field>
+	<field name="Body">&lt;p&gt;I have an absolutely positioned &lt;code&gt;div&lt;/code&gt; containing several children, one of which is a relatively positioned &lt;code&gt;div&lt;/code&gt;. When I use a &lt;strong&gt;percentage-based width&lt;/strong&gt; on the child &lt;code&gt;div&lt;/code&gt;, it collapses to '0' width on &lt;a href="http://en.wikipedia.org/wiki/Internet_Explorer_7" rel="noreferrer"&gt;Internet&amp;nbsp;Explorer&amp;nbsp;7&lt;/a&gt;, but not on Firefox or Safari.&lt;/p&gt;
+
+&lt;p&gt;If I use &lt;strong&gt;pixel width&lt;/strong&gt;, it works. If the parent is relatively positioned, the percentage width on the child works.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Is there something I'm missing here?&lt;/li&gt;
+&lt;li&gt;Is there an easy fix for this besides the &lt;em&gt;pixel-based width&lt;/em&gt; on the
+child?&lt;/li&gt;
+&lt;li&gt;Is there an area of the CSS specification that covers this?&lt;/li&gt;
+&lt;/ol&gt;
+</field>
+	<field name="OwnerUserId">9</field>
+	<field name="LastEditorUserId">63550</field>
+	<field name="LastEditorDisplayName">Rich B</field>
+	<field name="LastEditDate">2016-03-19 T06:05:48.487</field>
+	<field name="LastActivityDate">2016-03-19T06:10:52.170</field>
+	<field name="Title">Percentage width child element in absolutely positioned parent on Internet Explorer 7</field>
+	<field name="Tags">&lt;html&gt;&lt;css&gt;&lt;css3&gt;&lt;internet-explorer-7&gt;</field>
+	<field name="AnswerCount">5</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">8</field>
+</doc>
+
+<doc>
+	<field name="Id">7</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">4</field>
+	<field name="CreationDate">2008-07-31T22:17:57.883</field>
+	<field name="Score">349</field>
+	<field name="Body">&lt;p&gt;An explicit cast to double isn't necessary.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;double trans = (double)trackBar1.Value / 5000.0;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Identifying the constant as &lt;code&gt;5000.0&lt;/code&gt; (or as &lt;code&gt;5000d&lt;/code&gt;) is suffici ent:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;double trans = trackBar1.Value / 5000.0;
+double trans = trackBar1.Value / 5000d;
+&lt;/code&gt;&lt;/pre&gt;
+</field>
+	<field name="OwnerUserId">9</field>
+	<field name="LastEditorUserId">967315</field>
+	<field name="LastEditDate">2012-10-14T11:50:16.703</field>
+	<field name="LastActivityDate">2012-10-14T11:50:16.703</field>
+	<field name="CommentCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">9</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">1404</field>
+	<field name="CreationDate">2008-07-31T23:40:59.743</field>
+	<field name="Score">1509</field>
+	<field name="ViewCount">388201</field>
+	<field name="Body">&lt;p&gt;Given a &lt;code&gt;DateTime&lt;/code&gt; representing a person's birthday, how do I calculate their age in years?  &lt;/p&gt;
+</field>
+	<field name="OwnerUserId">1</field>
+	<field name="LastEditorUserId">6025198</field>
+	<field name="LastEditorDisplayName">Rich B</field>
+	<field name="LastEditDate">2017-05-10T14:44:11.947</field>
+	<field name="LastActivityDate">2017-05-10T14:44:11.947</field>
+	<field name="Title">Calculate age in C#</field>
+	<field name="Tags">&lt;c#&gt;&lt;.net&gt;&lt;datetime&gt;</field>
+	<field name="AnswerCount">58</field>
+	<field name="CommentCount">6</field>
+	<field name="FavoriteCount">341</field>
+	<field name="CommunityOwnedDate">2011-08-16T19:40:43.080</field>
+</doc>
+
+<doc>
+	<field name="Id">11</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">1248</field>
+	<field name="CreationDate">2008-07-31T23:55:37.967</field>
+	<field name="Score">1182</field>
+	<field name="ViewCount">120658</field>
+	<field name="Body">&lt;p&gt;Given a specific &lt;code&gt;DateTime&lt;/code&gt; value, how do I display relative time, like:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2 hours ago&lt;/li&gt;
+&lt;li&gt;3 days ago&lt;/li&gt;
+&lt;li&gt;a month ago&lt;/li&gt;
+&lt;/ul&gt;
+</field>
+	<field name="OwnerUserId">1</field>
+	<field name="LastEditorUserId">6479704</field>
+	<field name="LastEditorDisplayName">user2370523</field>
+	<field name="LastEditDate">2017-06-04T15:51:19.780</field>
+	<field name="LastActivityDate">2017-06-04T15:51:19.780</field>
+	<field name="Title">Calculate relative time in C#</field>
+	<field name="Tags">&lt;c#&gt;&lt;datetime&gt;&lt;time&gt;&lt;datediff&gt;&lt;relative-time-span&gt;</field>
+	<field name="AnswerCount">33</field>
+	<field name="CommentCount">3</field>
+	<field name="FavoriteCount">517</field>
+	<field name="CommunityOwnedDate">2009-09-04T13:15:59.820</field>
+</doc>
+
+<doc>
+	<field name="Id">12</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">11</field>
+	<field name="CreationDate">2008-07-31T23:56:41.303</field>
+	<field name="Score">300</field>
+	<field name="Body">&lt;p&gt;Well, here's how we do it on Stack Overflow.&lt;/p&gt;
+
+&lt;pre class="lang-csharp prettyprint-override"&gt;&lt;code&gt;var ts = new TimeSpan(DateTime.UtcNow.Ticks - dt.Ticks);
+double delta = Math.Abs(ts.TotalSeconds);
+
+if (delta &amp;lt; 60)
+{
+  retur n ts.Seconds == 1 ? "one second ago" : ts.Seconds + " seconds ago";
+}
+if (delta &amp;lt; 120)
+{
+  return "a minute ago";
+}
+if (delta &amp;lt; 2700) // 45 * 60
+{
+  return ts.Minutes + " minutes ago";
+}
+if (delta &amp;lt; 5400) // 90 * 60
+{
+  return "an hour ago";
+}
+if (delta &amp;lt; 86400) // 2 4 * 60 * 60
+{
+  return ts.Hours + " hours ago";
+}
+if (delta &amp;lt; 172800) // 48 * 60 * 60
+{
+  return "yesterday";
+}
+if (delta &amp;lt; 2592000) // 30 * 24 * 60 * 60
+{
+  return ts.Days + " days ago";
+}
+if (delta &amp;lt; 31104000) // 12 * 30 * 24 * 60 * 60
+{
+  int months = Convert.ToInt32(Math.Floor((double)ts.D ays / 30));
+  return months &amp;lt;= 1 ? "one month ago" : months + " months ago";
+}
+int years = Convert.ToInt32(Math.Floor((double)ts.Days / 365));
+return years &amp;lt;= 1 ? "one year ago" : years + " years ago";
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Suggestions? Comments? Ways to improve this algorithm?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">1</field>
+	<field name="LastEditorUserId">1420197</field>
+	<field name="LastEditorDisplayName">GateKiller</field>
+	<field name="LastEditDate">2014-02-18T14:19:35.770</field>
+	<field name="LastActivityDate">2014-02-18T14:19:35.770</field>
+	<field name="CommentCount">10</field>
+	<field name="CommunityOwnedDate">2009-09-04T13:15:59.820</field>
+</doc>
+
+<doc>
+	<field name="Id">13</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T00:42:38.903</field>
+	<field name="Score">482</field>
+	<field name="ViewCount">138485</field>
+	<field name="Body">&lt;p&gt;Is there any standard way for a Web Server to be able to determine a user's timezone within a web page? Perhaps from a HTTP header or part of the user-agent string?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">9</field>
+	<field name="LastEditorUserId">3155639</field>
+	<field name="LastEditorDisplayName">Rich B</field>
+	<field name="LastEditDate">2016-12-20T19:22 :26.510</field>
+	<field name="LastActivityDate">2017-03-27T18:08:32.890</field>
+	<field name="Title">Determine a User's Timezone</field>
+	<field name="Tags">&lt;javascript&gt;&lt;html&gt;&lt;browser&gt;&lt;timezone&gt;&lt;timezoneoffset&gt;</field>
+	<field name="AnswerCount">24</field>
+	<field name="CommentCount">3</field>
+	<field name="FavoriteCount">123</field>
+</doc>
+
+<doc>
+	<field name="Id">14</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T00:59:11.177</field>
+	<field name="Score">306</field>
+	<field name="ViewCount">92868</field>
+	<field name="Body">&lt;p&gt;What is the difference between &lt;a href="http://msdn.microsoft.com/en-us/library/9a6a2sxy.aspx" rel="noreferrer"&gt;&lt;code&gt;Math.Floor()&lt;/code&gt;&lt;/a&gt; and &lt;a href="http://msdn.microsoft.com/en-us/library/system.math.truncate.aspx" rel="noreferrer"&gt;&lt;code&gt;Math.Truncate()&lt;/code&gt;&lt;/a&gt; in .NET?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">11</field>
+	<field name="OwnerDisplayName">Anonymous User</field>
+	<field name="LastEditorUserId">6495084</field>
+	<field name="LastEditorDisplayName">Rich B</field>
+	<field name="LastEditDate">2017-02-25T17:42:17.810</field>
+	<field name="LastActivityDate">2017-04-04T07:41:15.410</field>
+	<field name="Title">Difference between Math.Floor() and Math.Truncate()</field>
+	<field name="Tags">&lt;.net&gt;&lt;math&gt;</field>
+	<field name="AnswerCount">8</field>
+	<field name="CommentCount">1</field>
+	<field name="FavoriteCount">47</field>
+</doc>
+
+<doc>
+	<field name="Id">16</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">12446</field>
+	<field name="CreationDate">2008-08-01T04:59:33.643</field>
+	<field name="Score">91</field>
+	<field name="ViewCount">74191</field>
+	<field name="Body">&lt;p&gt;How do you expose a LINQ query as an ASMX web service? Usually, from the business tier, I can return a typed &lt;code&gt;DataSet&lt;/code&gt; or &lt;code&gt;DataTable&lt;/code&gt; which can be serialized for transport over ASMX.&lt;/p&gt;
+
+&lt;p&gt;How c an I do the same for a LINQ query? Is there a way to populate a typed &lt;code&gt;DataSet&lt;/code&gt; or &lt;code&gt;DataTable&lt;/code&gt; via a LINQ query?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public static MyDataTable CallMySproc()
+{
+    string conn = "...";
+
+    MyDatabaseDataContext db = new MyDatabaseDataContext(conn);
+    MyDataTable dt = new MyDataTable() ;
+
+    // execute a sproc via LINQ
+    var query = from dr
+                in db.MySproc().AsEnumerable
+                select dr;
+
+    // copy LINQ query resultset into a DataTable -this does not work !    
+    dt = query.CopyToDataTable();
+
+    return dt;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How can I get the result set of a LINQ query into  a &lt;code&gt;DataSet&lt;/code&gt; or &lt;code&gt;DataTable&lt;/code&gt;? Alternatively, is the LINQ query serializeable so that I can expose it as an ASMX web service?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">2</field>
+	<field name="LastEditorUserId">2571493</field>
+	<field name="LastEditorDisplayName">Chris Fournier</field>
+	<field name="LastEditDate">2016-11-30T08:01:28.050</field>
+	<field name="LastActivityDate">2016-11-30T08:01:28.050</field>
+	<field name="Title">Filling a DataSet or DataTable from a LINQ q uery result set</field>
+	<field name="Tags">&lt;c#&gt;&lt;linq&gt;&lt;web-services&gt;&lt;.net-3.5&gt;</field>
+	<field name="AnswerCount">5</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">13</field>
+</doc>
+
+<doc>
+	<field name="Id">17</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">26</field>
+	<field name="CreationDate">2008-08-01T05:09:55.993</field>
+	<field name="Score">129</field>
+	<field name="ViewCount">53172</field>
+	<field name="Body">&lt;p&gt;How do I store binary data in &lt;a href="http://en.wikipedia.org/wiki/MySQL" rel="noreferrer"&gt;MySQL&lt;/a&gt;?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">2</field>
+	<field name="LastEditorUserId">546051</field>
+	<field name="LastEditDate">2011-10-21T21:29:17.160</field>
+	<field name="LastActivityDate">2016-07-31T15: 32:02.653</field>
+	<field name="Title">Binary Data in MySQL</field>
+	<field name="Tags">&lt;mysql&gt;&lt;database&gt;&lt;binary-data&gt;&lt;data-storage&gt;</field>
+	<field name="AnswerCount">11</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">15</field>
+</doc>
+
+<doc>
+	<field name="Id">18</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">17</field>
+	<field name="CreationDate">2008-08-01T05:12:44.193</field>
+	<field name="Score">40</field>
+	<field name="Body">&lt;p&gt;For a table like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE binary_data (
+    id INT(4) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    description CHAR(50),
+    bin_data LONGBLOB,
+    filename CHAR(50),
+    filesize CHAR(50),
+    filetype CHAR(50)
+);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here is a PHP example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+    // store.php3 - by Florian Dittmer &amp;lt;dittmer@gmx.net&amp;gt;
+    // Example php script to demonstrate the storing of binary files into
+    // an sql database. More information can be found at http://www.phpbuilder.com/
+?&amp;gt;
+
+&amp;lt;htm l&amp;gt;
+    &amp;lt;head&amp;gt;&amp;lt;title&amp;gt;Store binary data into SQL Database&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;
+
+    &amp;lt;body&amp;gt;
+        &amp;lt;?php
+            // Code that will be executed if the form has been submitted:
+
+            if ($submit) {
+                // Connect to the database (you may have to adjust
+                 // the hostname, username or password).
+
+                mysql_connect("localhost", "root", "password");
+                mysql_select_db("binary_data");
+
+                $data = mysql_real_escape_string(fread(fopen($form_data, "r"), filesize($form_data)));
+
+                $result = mysql_query("INSERT INTO binary_d ata (description, bin_data, filename, filesize, filetype) ".
+                                    "VALUES ('$form_description', '$data', '$form_data_name', '$form_data_size', '$form_data_type')");
+
+                $id= mysql_insert_id();
+                print "&amp;lt;p&amp;gt;This file has the following Database ID: &amp;lt;b&amp;gt;$id&amp;lt;/b&amp;gt;";
+
+                mysql_close();
+            } else {
+
+                // else show the form to submit new data:
+        ?&amp;gt;
+        &amp;lt;form method="post" action="&amp;lt;?php echo $PHP_SELF; ?&amp;gt;" enctype="multipart/form-data"&amp;gt;
+            File Description:&amp;lt;br&amp;gt;
+            &amp;lt;input type=" text" name="form_description"  size="40"&amp;gt;
+            &amp;lt;input type="hidden" name="MAX_FILE_SIZE" value="1000000"&amp;gt;
+            &amp;lt;br&amp;gt;File to upload/store in database:&amp;lt;br&amp;gt;
+            &amp;lt;input type="file" name="form_data"  size="40"&amp;gt;
+             &amp;lt;p&amp;gt;&amp;lt;input type="submit" name="submit" value="submit"&amp;gt;
+        &amp;lt;/form&amp;gt;
+
+        &amp;lt;?php
+            }
+        ?&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</field>
+	<field name="OwnerDisplayName">phpguy</field>
+	<field name="LastEditorUserId">126039</field>
+	<field name="LastEditorDisplayName">Jeff Atwood</field>
+	<field name="LastEditDate">2016-06-02T05:56:26.060</field>
+	<field name="LastActivityDate">2016-06-02T05:56:26.060</field>
+	<field name="CommentCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">19</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">531</field>
+	<field name="CreationDate">2008-08-01T05:21:22.257</field>
+	<field name="Score">239</field>
+	<field name="ViewCount">37246</field>
+	<field name="Body">&lt;p&gt;Solutions are welcome in any language. :-) I'm looking for the fastest way to obtain the value of ¦Ð, as a personal challenge. More specifically I'm using ways that don't involve using &lt;code&gt;#define&lt;/code&gt;d constants like &lt;code&gt;M_PI&lt;/code&gt; , or hard-coding the number in.&lt;/p&gt;
+
+&lt;p&gt;The program below tests the various ways I know of. The inline assembly version is, in theory, the fastest option, though clearly not portable; I've included it as a baseline to compare the other versions against. In my tests, with built-ins, the &lt;code&gt;4 * atan(1)&lt;/code&gt; version is fastest on GCC 4.2, because it auto-folds the  &lt;code&gt;atan(1)&lt;/code&gt; into a constant. With &lt;code&gt;-fno-builtin&lt;/code&gt; specified, the &lt;code&gt;atan2(0, -1)&lt;/code&gt; version is fastest.&lt;/p&gt;
+
+&lt;p&gt;Here's the main testing program (&lt;code&gt;pitimes.c&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre class="lang-c prettyprint-override"&gt;&lt;code&gt;#include &amp;lt;math.h&amp;gt;
+#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;time.h&amp;gt;
+
+#define ITERS 10000000
+#define TESTWITH(x) {                                                       \
+    diff = 0.0;                                                             \
+    time1 = clock();                                                        \
+    for (i = 0; i &amp;lt; ITERS; ++i)                                              \
+        diff += (x) - M_PI;                                                 \
+    time2 = clock();                                                        \
+    printf("%s\t=&amp;gt; %e, time =&amp;gt; %f\n", #x, diff, diffclock(time2, time1));   \
+}
+
+static inline double
+diffclock(clock_t time1, clock_t time0)
+{
+    return (double)  (time1 - time0) / CLOCKS_PER_SEC;
+}
+
+int
+main()
+{
+    int i;
+    clock_t time1, time2;
+    double diff;
+
+    /* Warmup. The atan2 case catches GCC's atan folding (which would
+     * optimise the ``4 * atan(1) - M_PI'' to a no-op), if -fno-builtin
+     * is not used. */
+    TESTWITH(4 * atan(1))
+    TESTWITH(4 * atan2(1, 1))
+
+#if defin ed(__GNUC__) &amp;amp;&amp;amp; (defined(__i386__) || defined(__amd64__))
+    extern double fldpi();
+    TESTWITH(fldpi())
+#endif
+
+    /* Actual tests start here. */
+    TESTWITH(atan2(0, -1))
+    TESTWITH(acos(-1))
+    TESTWITH(2 * asin(1))
+    TESTWITH(4 * atan2(1, 1))
+    TESTWITH(4 * atan(1))
+
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;And the inline assembly stuff (&lt;code&gt;fldpi.c&lt;/code&gt;), noting that it will only work for x86 and x64 systems:&lt;/p&gt;
+
+&lt;pre class="lang-c prettyprint-override"&gt;&lt;code&gt;double
+fldpi()
+{
+    double pi;
+    asm("fldpi" : "=t" (pi));
+    return pi;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And a b uild script that builds all the configurations I'm testing (&lt;code&gt;build.sh&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/sh
+gcc -O3 -Wall -c           -m32 -o fldpi-32.o fldpi.c
+gcc -O3 -Wall -c           -m64 -o fldpi-64.o fldpi.c
+
+gcc -O3 -Wall -ffast-math  -m32 -o pitimes1-32 pitimes.c fldpi-32.o
+gcc -O3 -Wall              -m32 -o pitimes2-32 pitimes.c  fldpi-32.o -lm
+gcc -O3 -Wall -fno-builtin -m32 -o pitimes3-32 pitimes.c fldpi-32.o -lm
+gcc -O3 -Wall -ffast-math  -m64 -o pitimes1-64 pitimes.c fldpi-64.o -lm
+gcc -O3 -Wall              -m64 -o pitimes2-64 pitimes.c fldpi-64.o -lm
+gcc -O3 -Wall -fno-builtin -m64 -o pitimes3-64 pitimes.c fldpi-64.o -lm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Apart from testing between variou s compiler flags (I've compared 32-bit against 64-bit too, because the optimisations are different), I've also tried switching the order of the tests around. The &lt;code&gt;atan2(0, -1)&lt;/code&gt; version still comes out top every time, though.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">13</field>
+	<field name="LastEditorUserId">635549</field>
+	<field name="LastEditorDisplayName">Chris Jester-Young</field>
+	<field name="LastEditDate">2015-07-11T12:15:53.303</field>
+	<field name="LastActivityDate">2017-06-04T16:53:53.667</field>
+	<field name="Title">What is the fastest way to get the value of ¦Ð?</field>
+	<field name="Tags">&lt;performance&gt;&lt;algorithm&gt;&lt;language-agnostic&gt;&lt;unix&gt;&lt;pi&gt;</field>
+	<field name="AnswerCount">22</field>
+	<field name="CommentCount">17</field>
+	<field name="FavoriteCount">71</field>
+</doc>
+
+<doc>
+	<field name="Id">21</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">9</field>
+	<field name="CreationDate">2008-08-01T08:57:27.280</field>
+	<field name="Score">28</field>
+	<field name="Body">&lt;p&gt;Many years ago, to provide an &lt;a href="http://cloud9.hedgee.com/age" rel="noreferrer"&gt;age calculator gimmick&lt;/a&gt; on my website, I wrote a function to calculate age to a fraction. This is a quick port of that function to C# (from &lt;a href="http://hedgee. svn.sourceforge.net/viewvc/hedgee/trunk/chris/ckwww/ckage.php3" rel="noreferrer"&gt;the PHP version&lt;/a&gt;). I'm afraid I haven't been able to test the C# version, but hope you enjoy all the same!&lt;/p&gt;
+
+&lt;p&gt;(Admittedly this is a bit gimmicky for the purposes of showing user profiles on Stack Overflow, but maybe readers will find some use for it. :-))&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;double AgeDiff(DateTime date1, DateTime date2) {
+    double years = date2.Year - date1.Year;
+
+    /*
+     * If date2 and date1 + round(date2 - date1) are on different sides
+     * of 29 February, then our partial year is considered to have 366
+     * days total, otherwise it's 365. Note that 59 is the day number
+     * of 29 Feb.
+     */ 
+    double fraction = 365
+            + (DateTime.IsLeapYear(date2.Year) &amp;amp;&amp;amp; date2.DayOfYear &amp;gt;= 59
+            &amp;amp;&amp;amp; (date1.DayOfYear &amp;lt; 59 || date1.DayOfYear &amp;gt; date2.DayOfYear)
+            ? 1 : 0);
+
+    /*
+     * The only really nontrivial case is if date1 is in a leap year,
+     * and date2 is not. So let's handle t he others first.
+     */
+    if (DateTime.IsLeapYear(date2.Year) == DateTime.IsLeapYear(date1.Year))
+        return years + (date2.DayOfYear - date1.DayOfYear) / fraction;
+
+    /*
+     * If date2 is in a leap year, but date1 is not and is March or
+     * beyond, shift up by a day.
+     */
+    if (DateTime.IsLeapYear(date2.Year)) {
+        return years + (date 2.DayOfYear - date1.DayOfYear
+                - (date1.DayOfYear &amp;gt;= 59 ? 1 : 0)) / fraction;
+    }
+
+    /*
+     * If date1 is not on 29 February, shift down date1 by a day if
+     * March or later. Proceed normally.
+     */
+    if (date1.DayOfYear != 59) {
+        return years + (date2.DayOfYear - date1.DayOfYear
+                + (date1.DayOfYear &amp;gt; 59 ? 1 : 0)) / fraction;
+    }
+
+    /*
+     * Okay, here date1 is on 29 February, and date2 is not on a leap
+     * year. What to do now? On 28 Feb in date2's year, the ``age''
+     * should be just shy of a whole number, and on 1 Mar should be
+     * just over. Perhaps the easiest way is to a point halfway
+     * between those two: 58.5.
+     */
+    ret urn years + (date2.DayOfYear - 58.5) / fraction;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</field>
+	<field name="OwnerUserId">13</field>
+	<field name="LastEditorUserId">13</field>
+	<field name="LastEditorDisplayName">Chris Jester-Young</field>
+	<field name="LastEditDate">2008-08-01T12:35:11.707</field>
+	<field name="LastActivityDate">2008-08-01T12:35:11.707</field>
+	<field name="CommentCount">0</field>
+	<field name="CommunityOwnedDate">2011-08-16T19:40:43.080</field>
+</doc>
+
+<doc>
+	<field name="Id">22</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">9</field>
+	<field name="CreationDate">2008-08-01T12:07:19.500</field>
+	<field name="Score">21</field>
+	<field name="Body">&lt;p&gt;The best way that I know of because of leap years and everything is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DateTime birthDate = new DateTime(2000,3,1);
+int age = (int)Math.Floor((DateTime.Now - birthDate).TotalDays / 365.25D);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hope this  helps.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">17</field>
+	<field name="LastEditorUserId">17</field>
+	<field name="LastEditorDisplayName">Nick</field>
+	<field name="LastEditDate">2008-08-01T15:26:37.087</field>
+	<field name="LastActivityDate">2008-08-01T15:26:37.087</field>
+	<field name="CommentCount">0</field>
+	<field name="CommunityOwnedDate">2011-08-16T19:40:43.080</field>
+</doc>
+
+<doc>
+	<field name="Id">24</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">49</field>
+	<field name="CreationDate">2008-08-01T12:12:19.350</field>
+	<field name="Score">113</field>
+	<field name="ViewCount">48424</field>
+	<field name="Body">&lt;p&gt;If I have a &lt;code&gt;trigger&lt;/code&gt; &lt;code&gt;before the update&lt;/code&gt; on a table, how can I throw an error that prevents the update on that table?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">22</field>
+	<field name="LastEditorUserId">5195227</field>
+	<field name="LastEditorDisplayName">Jim Anderson</field>
+	<field name="LastEditDate">2016-03-11T08:26:05.063</field>
+	<field name="LastActivityDate">2016-11-19T21:05:59.207</field>
+	<field name="Title">Throw an error in a MySQL trigger</field>
+	<field name="Tags">&lt;mysql&gt;&lt;database&gt;&lt;triggers&gt;</field>
+	<field name="AnswerCount">6</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">17</field>
+</doc>
+
+<doc>
+	<field name="Id">25</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">1443907</field>
+	<field name="CreationDate">2008-08-01T12:13:50.207</field>
+	<field name="Score">108</field>
+	<field name="ViewCount">7623</field>
+	<field name="Body">&lt;p&gt;I've been having issues getting the C sockets API to work properly in C++. Specifically, although I am including &lt;code&gt;sys/socket.h&lt;/code&gt;, I still get compile time errors telling me that &lt;code&gt;AF_INET&lt;/code&gt; is not defined. Am I missin g something obvious, or could this be related to the fact that I'm doing this coding on &lt;code&gt;z/OS&lt;/code&gt; and my problems are much more complicated?&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Upon further investigation, I discovered that there is an &lt;code&gt;#ifdef&lt;/code&gt; that I'm hitting. Apparently &lt;code&gt;z/OS&lt;/code&gt; isn't  happy unless I define which "type" of sockets I'm using with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#define _OE_SOCKETS
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, I personally have no idea what this &lt;code&gt;_OE_SOCKETS&lt;/code&gt; is actually for, so if any &lt;code&gt;z/OS&lt;/code&gt; sockets programmers are out there (all 3 of you), perhaps you could give me a rundow n of how this all works?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">23</field>
+	<field name="LastEditorUserId">6850771</field>
+	<field name="LastEditorDisplayName">user5857081</field>
+	<field name="LastEditDate">2017-04-26T15:27:47.350</field>
+	<field name="LastActivityDate">2017-04-26T15:27:47.350</field>
+	<field name="Title">How to use the C socket API in C++ on z/OS</field>
+	<field name="Tags">&lt;c++&gt;&lt;c&gt;&lt;sockets&gt;&lt;mainframe&gt;&lt;zos&gt;</field>
+	<field name="AnswerCount">10</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">5</field>
+</doc>
+
+<doc>
+	<field name="Id">26</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">17</field>
+	<field name="CreationDate">2008-08-01T12:16:22.167</field>
+	<field name="Score">100</field>
+	<field name="Body">&lt;p&gt;The answer by phpguy is correct but I think there is a lot of confusion in the  additional details there.&lt;/p&gt;
+
+&lt;p&gt;The basic answer is in a &lt;code&gt;BLOB&lt;/code&gt; data type / attribute domain. &lt;strong&gt;BLOB&lt;/strong&gt; is short for Binary Large Object and  that column data type is specific for handling binary data.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href="http://dev.mysql.com/doc/refman/5.7/en/blob.html" rel="noreferrer"&gt;the relevant manual page for MySQL&lt;/a&gt;.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">48</field>
+	<field name="OwnerDisplayName">Mat Scales</field>
+	<field name="LastEditorUserId">126039</field>
+	<field name="LastEditorDisplayName">Geoff Dalgas</field>
+	<field name="LastEditDate">2016-06-02T05:55:17.0 60</field>
+	<field name="LastActivityDate">2016-06-02T05:55:17.060</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">27</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">11</field>
+	<field name="CreationDate">2008-08-01T12:17:19.357</field>
+	<field name="Score">28</field>
+	<field name="Body">&lt;p&gt;@jeff&lt;/p&gt;
+
+&lt;p&gt;IMHO yours seems a little long.  However it does seem a little more robust with support for "yesterday" and "years".  But in my experience when this is used the person is most likely to view the content in the first 30 days.  It is only  the really hardcore people that come after that.  So that is why I usually elect to keep this short and simple.&lt;/p&gt;
+
+&lt;p&gt;This is the method I am currently using on one of my websites.  This only returns a relative day, hour, time.  And then the user has to slap on "ago" in the output.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public static string ToLongString(this TimeS pan time)
+{
+    string output = String.Empty;
+
+    if (time.Days &amp;gt; 0)
+        output += time.Days + " days ";
+
+    if ((time.Days == 0 || time.Days == 1) &amp;amp;&amp;amp; time.Hours &amp;gt; 0)
+        output += time.Hours + " hr ";
+
+    if (time.Days == 0 &amp;amp;&amp;amp; time.Minutes &amp;gt; 0)
+        output += time.Minu tes + " min ";
+
+    if (output.Length == 0)
+        output += time.Seconds + " sec";
+
+    return output.Trim();
+}
+&lt;/code&gt;&lt;/pre&gt;
+</field>
+	<field name="OwnerUserId">17</field>
+	<field name="LastEditorUserId">17</field>
+	<field name="LastEditorDisplayName">Nick Berardi</field>
+	<field name="LastEditDate">2008-08-01T13:16:49.127</field>
+	<field name="LastActivityDate">2008-08-01T13:16:49.127</field>
+	<field name="CommentCount">0</field>
+	<field name="CommunityOwnedDate">2009-09-04T1 3:15:59.820</field>
+</doc>
+
+<doc>
+	<field name="Id">29</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">13</field>
+	<field name="CreationDate">2008-08-01T12:19:17.417</field>
+	<field name="Score">61</field>
+	<field name="Body">&lt;p&gt;There are no HTTP headers that will report the clients timezone so far although it has been suggested to include it in the HTTP specification.&lt;/p&gt;
+
+&lt;p&gt;If it was me, I would probably try to fetch the timezone using clientside JavaScript and then submit it to the server us ing Ajax or something.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">19</field>
+	<field name="LastActivityDate">2008-08-01T12:19:17.417</field>
+	<field name="CommentCount">4</field>
+</doc>
+
+<doc>
+	<field name="Id">30</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">25</field>
+	<field name="CreationDate">2008-08-01T12:22:40.797</field>
+	<field name="Score">27</field>
+	<field name="Body">&lt;p&gt;I've had no trouble using the BSD sockets API in C++, in GNU/Linux. Here's the sample program I used:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;sys/socket.h&amp;gt;
+
+int
+main()
+{
+    return AF_INET;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;S o my take on this is that z/OS is probably the complicating factor here, however, because I've never used z/OS before, much less programmed in it, I can't say this definitively. :-P&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">13</field>
+	<field name="LastActivityDate">2008-08-01T12:22:40.797</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">31</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">6</field>
+	<field name="CreationDate">2008-08-01T12:22:51.593</field>
+	<field name="Score">111</field>
+	<field name="Body">&lt;p&gt;The parent &lt;code&gt;div&lt;/code&gt; needs to have a defined &lt;code&gt;width&lt;/code&gt;, either in pixels or as a percentage. In Internet&amp;nbsp;Explorer&amp;nbsp;7, the parent &lt;code&gt;div&lt;/code&gt; needs a defined &lt;code&gt;width&lt;/code&gt; for child percentage &lt;code &gt;div&lt;/code&gt;s to work correctly.&lt;/p&gt;
+</field>
+	<field name="OwnerDisplayName">maclema</field>
+	<field name="LastEditorUserId">63550</field>
+	<field name="LastEditDate">2016-03-19T06:10:52.170</field>
+	<field name="LastActivityDate">2016-03-19T06:10:52.170</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">33</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">14</field>
+	<field name="CreationDate">2008-08-01T12:26:39.773</field>
+	<field name="Score">381</field>
+	<field name="Body">&lt;p&gt;&lt;code&gt;Math.Floor&lt;/code&gt; rounds down, &lt;code&gt;Math.Ceiling&lt;/code&gt; rounds up, and &lt;code&gt;Math.Truncate&lt;/code&gt; rounds towards zero. Thus, &lt;code&gt;Math.Truncate&lt;/code&gt; is like &lt;code&gt;Math.Floor&lt;/code&gt; for positive numbers, and like &lt;code &gt;Math.Ceiling&lt;/code&gt; for negative numbers. Here's the &lt;a href="http://msdn.microsoft.com/en-us/library/system.math.truncate.aspx" rel="nofollow noreferrer"&gt;reference&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For completeness, &lt;code&gt;Math.Round&lt;/code&gt; rounds to the nearest integer. If the number is exactly midway between two integers, then it rounds towards  the even one. &lt;a href="http://msdn.microsoft.com/en-us/library/system.math.round.aspx" rel="nofollow noreferrer"&gt;Reference.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;See also: &lt;a href="https://stackoverflow.com/questions/14/whats-the-difference-between-math-floor-and-math-truncate-in-c/580252#580252"&gt;Pax Diablo's answer&lt;/a&gt;. Highly recommended!&lt;/p&gt; 
+</field>
+	<field name="OwnerUserId">13</field>
+	<field name="LastEditorUserId">-1</field>
+	<field name="LastEditDate">2017-05-23T12:03:01.573</field>
+	<field name="LastActivityDate">2009-10-14T02:09:03.030</field>
+	<field name="CommentCount">4</field>
+</doc>
+
+<doc>
+	<field name="Id">34</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T12:30:57.630</field>
+	<field name="Score">59</field>
+	<field name="ViewCount">7489</field>
+	<field name="Body">&lt;p&gt;How do I forcefully unload a &lt;code&gt;ByteArray&lt;/code&gt; from memory in ActionScript 3?&lt;/p&gt;
+
+&lt;p&gt;I have tried (without success):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;byteArray.length = 0;
+byteArray = new ByteArray();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for ( var i:int=0; i &amp;lt; byteArray.length; i++ ) {
+    byteArray[i] = null;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</field>
+	<field name="OwnerDisplayName">maclema</field>
+	<field name="LastEditorUserId">1213296</field>
+	<field name="LastEditDate">2015-12-16T05:35:30.353</field>
+	<field name="LastActivityDate">2016-05-28T20:12:42.107</field>
+	<field name="Title">Unloading a ByteArray in Actionscript 3</field>
+	<field name="Tags">&lt;actionscript-3&gt;&lt; flex&gt;&lt;bytearray&gt;</field>
+	<field name="AnswerCount">8</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">36</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">352</field>
+	<field name="CreationDate">2008-08-01T12:35:56.917</field>
+	<field name="Score">107</field>
+	<field name="ViewCount">44399</field>
+	<field name="Body">&lt;p&gt;How can I monitor an SQL Server database for changes to a table without using triggers or modifying the structure of the database in any way? My preferred programming environment is &lt;a href="http://en.wikipedia.org/wiki/.NET_Framework" rel="nore ferrer"&gt;.NET&lt;/a&gt; and C#.&lt;/p&gt;
+
+&lt;p&gt;I'd like to be able to support any &lt;a href="http://en.wikipedia.org/wiki/Microsoft_SQL_Server#Genesis" rel="noreferrer"&gt;SQL Server 2000&lt;/a&gt; SP4 or newer. My application is a bolt-on data visualization for another company's product. Our customer base is in the thousands, so I don't want to have to put  in requirements that we modify the third-party vendor's table at every installation.&lt;/p&gt;
+
+&lt;p&gt;By &lt;em&gt;"changes to a table"&lt;/em&gt; I mean changes to table data, not changes to table structure.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, I would like the change to trigger an event in my application, instead of having to check for changes at an interval.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;The best course of action given my requirements (no triggers or schema modification, SQL Server 2000 and 2005) seems to be to use the &lt;code&gt;BINARY_CHECKSUM&lt;/code&gt; function in &lt;a href="http://en.wikipedia.org/wiki/Transact-SQL" rel="noreferrer"&gt;T-SQL&lt;/a&gt;. The way I plan to implement is this:&lt;/p&gt;
+
+&lt;p&gt;Ev ery X seconds run the following query:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT CHECKSUM_AGG(BINARY_CHECKSUM(*))
+FROM sample_table
+WITH (NOLOCK);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And compare that against the stored value. If the value has changed, go through the table row by row using the query:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT row_id, BINARY_CHECKSUM(*)
+FROM sample_table
+WITH (NOLOCK);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And compare the returned checksums against stored values.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">32</field>
+	<field name="LastEditorUserId">2571493</field>
+	<field name="LastEditorDisplayName">Ma rk Harrison</field>
+	<field name="LastEditDate">2016-11-30T07:50:37.517</field>
+	<field name="LastActivityDate">2017-02-27T13:35:29.970</field>
+	<field name="Title">Check for changes to an SQL Server table?</field>
+	<field name="Tags">&lt;sql&gt;&lt;sql-server&gt;&lt;datatable&gt;&lt;rdbms&gt;</field>
+	<field name="AnswerCount">8</field>
+	<field name="CommentCount">1</field>
+	<field name="FavoriteCount">21</field>
+</doc>
+
+<doc>
+	<field name="Id">37</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">25</field>
+	<field name="CreationDate">2008-08-01T12:36:00.957</field>
+	<field name="Score">33</field>
+	<field name="Body">&lt;p&gt;Sure I can post a test app.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;sys/socket.h&amp;gt;
+
+int main()
+{
+    return AF_INET;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Compile/Link Output:&lt;/p&gt;
+
+&lt;p&gt;cxx -Wc,xplink -Wl,xplink -o i net_test inet.C&lt;/p&gt;
+
+&lt;p&gt;"./inet.C", line 5.16: CCN5274 (S) The name lookup for "AF_INET" did not find a declaration.&lt;/p&gt;
+
+&lt;p&gt;CCN0797(I) Compilation failed for file ./inet.C. Object file not created.&lt;/p&gt;
+
+&lt;p&gt;A check of sys/sockets.h does include the definition I need, and as far as I can tell, it is not being blocked by  any #ifdef statements.&lt;/p&gt;
+
+&lt;p&gt;I have however noticed it contains a the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ifdef __cplusplus
+  extern "C" {
+#endif
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;which encapsulates basically the whole file. Not sure if it matters.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">23</field>
+	<field name="LastEditorUserId">23</field>
+	<field name="LastEditorDisplayName">Ja x</field>
+	<field name="LastEditDate">2008-08-01T12:42:32.113</field>
+	<field name="LastActivityDate">2008-08-01T12:42:32.113</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">39</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">45</field>
+	<field name="CreationDate">2008-08-01T12:43:11.503</field>
+	<field name="Score">62</field>
+	<field name="ViewCount">3996</field>
+	<field name="Body">&lt;p&gt;I am aware that in &lt;a href="http://en.wikipedia.org/wiki/.NET_Framework" rel="noreferrer"&gt;.NET&lt;/a&gt; there are three timer types (see &lt;em&gt;&lt;a href="http://msdn.microsoft.com/en-us/magazine/cc164015.aspx" rel="nore ferrer"&gt;Comparing the Timer Classes in the .NET Framework Class Library&lt;/a&gt;&lt;/em&gt;). I have chosen a threaded timer as the other types can drift if the main thread is busy, and I need this to be reliable.&lt;/p&gt;
+
+&lt;p&gt;The way this timer works in the control of the timer is put on another thread so it can always tick along with the work begin completed on the parent  thread when it is not busy.&lt;/p&gt;
+
+&lt;p&gt;The issue with this timer in a console application is that while the timer is ticking along on another thread the main thread is not doing anything so the application closes.&lt;/p&gt;
+
+&lt;p&gt;I tried adding a &lt;code&gt;while true&lt;/code&gt; loop, but then the main thread is too busy when the timer does go off.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">33</field>
+	<field name="LastEditorUserId">63550</field>
+	<field name="LastEditorDisplayName">Jim Anderson</field>
+	<field name="LastEditDate">2012-05-25T20:55:43.157</field>
+	<field name="LastActivityDate">2014-01-17T09:33:10.450</field>
+	<field name="Title">Reliable timer in a console application</field>
+	<field name="Tags">&lt;c#&gt;&lt;.net&gt;&lt;vb.net&gt;&lt;timer&gt;</field>
+	<field name="AnswerCount">2</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">42</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">77</field>
+	<field name="CreationDate">2008-08-01T12:50:18.587</field>
+	<field name="Score">230</field>
+	<field name="ViewCount">28345</field>
+	<field name="Body">&lt;p&gt;I am starting a new web application in PHP and this time around I want to create something that people can extend by using a plugin interface. &lt;/p&gt;
+
+&lt;p&gt;How does one go about writing 'hooks' into their code so that plugins can attach to specific  events?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">37</field>
+	<field name="LastEditorUserId">4595675</field>
+	<field name="LastEditorDisplayName">Vaibhav</field>
+	<field name="LastEditDate">2015-12-14T20:05:51.823</field>
+	<field name="LastActivityDate">2017-02-20T11:18:33.207</field>
+	<field name="Title">Best way to allow plugins for a PHP application</field>
+	<field name="Tags">&lt;php&gt;&lt;plugins&gt;&lt;architecture&gt;&lt;hook&gt;</field>
+	<field name="AnswerCount">8</field>
+	<field name="CommentCount">1</field>
+	<field name="FavoriteCount">104</field>
+</doc>
+
+<doc>
+	<field name="Id">44</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">39</field>
+	<field name="CreationDate">2008-08-01T12:55:42.413</field>
+	<field name="Score">13</field>
+	<field name="Body">&lt;p&gt;Consider using a &lt;a href="http://msdn.microsoft.com/en-us/library/system.threading.manualresetevent.aspx" rel="noreferrer" title="MSDN Reference"&gt;ManualResetEvent&lt;/a&gt; to block the main thread at the end of its processing, and call &lt;code&gt;Reset( )&lt;/code&gt; on it once the timer's processing has finished.  If this is something that needs to run constantly, consider moving this into a service process instead of a console app.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">35</field>
+	<field name="LastEditorUserId">967315</field>
+	<field name="LastEditDate">2012-10-14T12:20:15.140</field>
+	<field name="LastActivityDate">2012-10-14T12:20:15.140</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">45</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">39</field>
+	<field name="CreationDate">2008-08-01T12:56:37.920</field>
+	<field name="Score">43</field>
+	<field name="Body">&lt;p&gt;You can use something like &lt;code&gt;Console.ReadLine()&lt;/code&gt; to block the main thread, so other background threads (like timer threads) will still work. You may also use an &lt;a href="http://msdn.microsoft.com/en-us/library/system.threading.autoresetevent.aspx" rel="noreferrer"&gt;AutoResetEvent&lt;/a&gt; to block the execution, then (when you need to) you can call Set() method on that AutoResetEvent object to release the main thread. Also ensure that your reference to Timer object doesn't go out of scope and garbage collected.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">39</field>
+	<field name="LastEditorUserId">967315</field>
+	<field name="LastEditorDisplayName">huseyint</field>
+	<field name="LastEditDate">2012-10-14T12:20:06.7 00</field>
+	<field name="LastActivityDate">2012-10-14T12:20:06.700</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">48</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">31910</field>
+	<field name="CreationDate">2008-08-01T13:01:17.303</field>
+	<field name="Score">209</field>
+	<field name="ViewCount">187944</field>
+	<field name="Body">&lt;p&gt;Let's say you create a Wizard in an HTML form. One button goes back, and one goes forward.  Since the &lt;em&gt;back&lt;/em&gt; button appears first in the markup when you press Enter it will use that button to submit the form. &lt;/p&gt;
+
+&lt;p&gt;Exa mple:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class="snippet" data-lang="js" data-hide="false" data-console="true" data-babel="false"&gt;
+&lt;div class="snippet-code"&gt;
+&lt;pre class="snippet-code-html lang-html prettyprint-override"&gt;&lt;code&gt;&amp;lt;form&amp;gt;
+  &amp;lt;!-- put your cursor in thi s field and press Enter --&amp;gt;
+  &amp;lt;input type="text" name="field1" /&amp;gt;
+
+  &amp;lt;!-- This is the button that will submit --&amp;gt;
+  &amp;lt;input type="submit" name="prev" value="Previous Page" /&amp;gt;
+
+  &amp;lt;!-- But this is the button that I WANT to submit --&amp;gt;
+  &amp;lt;input type="submit" name="next" value="Next Page" /&amp;gt;
+&amp;lt;/form&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;What I would like to do, is get to decide which button is used to submit the form when a user presses Enter. That way, when you press Enter the Wizard will m ove to the next page, not the previous. Do you have to use &lt;code&gt;tabindex&lt;/code&gt; to do this?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">40</field>
+	<field name="LastEditorUserId">2246271</field>
+	<field name="LastEditorDisplayName">kevin d</field>
+	<field name="LastEditDate">2017-04-12T17:19:03.337</field>
+	<field name="LastActivityDate">2017-04-12T17:19:03.337</field>
+	<field name="Title">Multiple submit buttons in an HTML form</field>
+	<field name="Tags">&lt;html&gt;&lt;form-submit&gt;&lt;html-form&gt;&lt;submit-button&gt;</field>
+	<field name="AnswerCount">20</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">29</field>
+</doc>
+
+<doc>
+	<field name="Id">49</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">24</field>
+	<field name="CreationDate">2008-08-01T13:02:51.900</field>
+	<field name="Score">46</field>
+	<field name="Body">&lt;p&gt;&lt;a href="http://www.brokenbuild.com/blog/2006/08/15/mysql-triggers-how-do-you-abort-an-insert-update-or-delete-with-a-trigger/" rel="noreferrer"&gt;Here is one hack&lt;/a&gt; that may work. It isn't clean, but it looks like it might work:&lt;/p&gt;
+
+&lt;p&gt;E ssentially, you just try to update a column that doesn't exist.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">43</field>
+	<field name="LastEditorUserId">957909</field>
+	<field name="LastEditDate">2012-12-24T21:24:41.017</field>
+	<field name="LastActivityDate">2012-12-24T21:24:41.017</field>
+	<field name="CommentCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">51</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">36</field>
+	<field name="CreationDate">2008-08-01T13:07:52.810</field>
+	<field name="Score">19</field>
+	<field name="Body">&lt;p&gt;Why don't you want to use triggers?  They are a good thing if you use them correctly.  If you use them as a way to enforce referential integrity that is when they go from good to bad.  But if you use them for monitoring, they are not really considered taboo.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">17</field>
+	<field name="LastEditorUserId">3735690</field>
+	<field name="LastEditDate">2017-01-26T17:38:44.893</field>
+	<field name="LastActivityDate">2017-01-26T17:38:44.893</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">52</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">34</field>
+	<field name="CreationDate">2008-08-01T13:08:59.127</field>
+	<field name="Score">13</field>
+	<field name="Body">&lt;p&gt;Have a look at this article&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.gskinner.com/blog/archives/2006/06/as3_resource_ma.html" rel="noreferrer"&gt;http://www.gskinner.com/blog/archives/2006/06/as3_resource_ma.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;IANA actio nscript programmer, however the feeling I'm getting is that, because the garbage collector might not run when you want it to.&lt;/p&gt;
+
+&lt;p&gt;Hence
+&lt;a href="http://www.craftymind.com/2008/04/09/kick-starting-the-garbage-collector-in-actionscript-3-with-air/" rel="noreferrer"&gt;http://www.craftymind.com/2008/04/09/kick-starting-the-garbage-collector-in-actions cript-3-with-air/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So I'd recommend trying out their collection code and see if it helps&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;private var gcCount:int;
+private function startGCCycle():void{
+    gcCount = 0;
+    addEventListener(Event.ENTER_FRAME, doGC);
+}
+private function doGC(evt:Event):void{
+    flash.system.System.gc();
+    if( ++gcCount &amp;gt; 1){
+        removeEventListener(Event.ENTER_FRAME, doGC);
+        setTimeout(lastGC, 40);
+    }
+}
+private function lastGC():void{
+    flash.system.System.gc();
+}
+&lt;/code&gt;&lt;/pre&gt;
+</field>
+	<field name="OwnerUserId">23</field>
+	<field name="LastActivityDate">2008-08-01T13:08:59.127</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">53</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">34</field>
+	<field name="CreationDate">2008-08-01T13:08:59.487</field>
+	<field name="Score">17</field>
+	<field name="Body">&lt;p&gt;(I'm not positive about this, but...)&lt;/p&gt;
+
+&lt;p&gt;AS3 uses a non-deterministic garbage collection. Which means that unreferenced memory will be freed up whenever the runtime feels like it (typically not unless there's a reason to run, since it's an expensive operation to exe cute). This is the same approach used by most modern garbage collected languages (like C# and Java as well).&lt;/p&gt;
+
+&lt;p&gt;Assuming there are no other references to the memory pointed to by &lt;code&gt;byteArray&lt;/code&gt; or the items within the array itself, the memory will be freed at some point after you exit the scope where &lt;code&gt;byteArray&lt;/code&gt; is declared.&lt;/p&gt;
+
+&lt;p&gt;You can force a garbage collection, though you really shouldn't. If you do, do it only for testing... if you do it in production, you'll hurt performance much more than help it.&lt;/p&gt;
+
+&lt;p&gt;To force a GC, try (yes, twice):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;flash.system.System.gc();
+flash.system.System.gc();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href="http://www.craftymind.com/2008/04/09/kick-starting-the-garbage-collector-in-actionscript-3-with-air/" rel="noreferrer"&gt;You can read more here&lt;/a&gt;.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">34</field>
+	<field name="LastEditorUserId">1668244</field>
+	<field name="LastEditDate">2014-07-10T21:03:46.907</field>
+	<field name="LastActivityDate">2014-07-10T21:03:46.907</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">56</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">48</field>
+	<field name="CreationDate">2008-08-01T13:10:16.473</field>
+	<field name="Score">50</field>
+	<field name="Body">&lt;p&gt;Give your submit buttons same name like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type="submit" name="submitButton" value="Previous Page" /&amp;gt;
+&amp;lt;input type="submit" name="submitButton" value="Next Page " /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When the user presses enter and the &lt;em&gt;Request&lt;/em&gt; goes to server, you can check the value for &lt;code&gt;submitButton&lt;/code&gt; on your server-side code which contains a collection of form &lt;code&gt;name/value&lt;/code&gt; pairs. For example in classic ASP:&lt;/p&gt;
+
+&lt;pre class="lang-vb prettyprin t-override"&gt;&lt;code&gt;If Request.Form("submitButton") = "Previous Page" Then
+    ' Code for Previous Page
+ElseIf Request.Form("submitButton") = "Next Page" Then
+    ' Code for Next Page
+End If
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Reference: &lt;a href="http://www.chami.com/tips/internet/042599I.html" rel="no referrer"&gt;Using multiple submit buttons on a single form&lt;/a&gt;&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">39</field>
+	<field name="LastEditorUserId">2354564</field>
+	<field name="LastEditDate">2014-07-14T07:55:42.730</field>
+	<field name="LastActivityDate">2014-07-14T07:55:42.730</field>
+	<field name="CommentCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">58</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">48</field>
+	<field name="CreationDate">2008-08-01T13:14:30.303</field>
+	<field name="Score">56</field>
+	<field name="Body">&lt;p&gt;Would it be possible for you to change the previous button type into a button like this:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type="button" name="prev" value="Previous Page" /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now the  Next button would be the default, plus you could also add the &lt;code&gt;default&lt;/code&gt; attribute to it so that your browser will highlight it like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type="submit" name="next" value="Next Page" default /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hope that helps.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId"> 37</field>
+	<field name="LastEditorUserId">875317</field>
+	<field name="LastEditDate">2015-07-06T22:50:09.980</field>
+	<field name="LastActivityDate">2015-07-06T22:50:09.980</field>
+	<field name="CommentCount">6</field>
+</doc>
+
+<doc>
+	<field name="Id">59</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">43110</field>
+	<field name="CreationDate">2008-08-01T13:14:33.797</field>
+	<field name="Score">67</field>
+	<field name="ViewCount">22314</field>
+	<field name="Body">&lt;p&gt;Let's say I have a &lt;code&gt;DataTable&lt;/code&gt; with a &lt;code&gt;Name&lt;/code&gt; column. I want to have a collection of the unique names ordered alphabetically. The following query ignores the order by clause.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; var names =
+    (from DataRow dr in dataTable.Rows
+    orderby (string)dr["Name"]
+    select (string)dr["Name"]).Distinct();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Why does the &lt;code&gt;orderby&lt;/code&gt; not get enforced?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">45</field>
+	<field name="LastEditorUserId">885318</field>
+	<field name="LastEditorDisplayName">Keith</field>
+	<field name="LastEditDate">2014-01-01T16:43:44.793</field>
+	<field name="LastActivityDate">2014-08-19T23:17:56.597</field>
+	<field name="Title">How do I get a distinct, ordered list of names from a DataTable using LINQ?</field>
+	<field name="Tags">&lt;c#&gt;&lt;linq&gt;&lt;.net-3.5&gt;</field>
+	<field name="AnswerCount">5</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">60</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">34</field>
+	<field name="CreationDate">2008-08-01T13:14:40.007</field>
+	<field name="Score">11</field>
+	<field name="Body">&lt;p&gt;Unfortunately when it comes to memory management in &lt;em&gt;Flash/actionscript&lt;/em&gt; there isn't a whole lot you can do. ActionScript was designed to be easy to use (so they didn't want people to have to worry about memory management)&lt;/p&gt;
+
+&lt;p&gt;The following is a wo rkaround, instead of creating a &lt;code&gt;ByteArray&lt;/code&gt; variable try this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var byteObject:Object = new Object();
+
+byteObject.byteArray = new ByteArray();
+
+...
+
+//Then when you are finished delete the variable from byteObject
+delete byteObject.byteArray;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where &lt;code&gt; byteArray&lt;/code&gt; is a dynamic property of &lt;code&gt;byteObject&lt;/code&gt;, you can free the memory that was allocated for it.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">41</field>
+	<field name="LastEditorUserId">2354564</field>
+	<field name="LastEditDate">2014-07-11T14:58:07.480</field>
+	<field name="LastActivityDate">2014-07-11T14:58:07.480</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">61</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T13:17:20.640</field>
+	<field name="Score">31</field>
+	<field name="ViewCount">2162</field>
+	<field name="Body">&lt;p&gt;Where can I find a list of the MIME types and identifying characters for Office 2007 files?&lt;/p&gt;
+
+&lt;p&gt;I have an upload form that is restricting uploads based on extension and identifying characters, but I cannot seem to find the Office 2007 MIME types.&lt;/p&gt;
+</field>
+	<field name="OwnerDisplayName">maclema</field>
+	<field name="LastEditorUserId">1454806</field>
+	<field name="LastEditorDisplayName">Mark Biek</field>
+	<field name="LastEditDate">2013-04-11T20:15:23.130</field>
+	<field name="LastActivityDate">2017-01-02T03:57:33.723</field>
+	<field name="Title">Office 2007 File Type, Mime Types and Identifying Characters</field>
+	<field name="Tags">&lt;office-2007&gt;&lt;file-type&gt;</field>
+	<field name="AnswerCount">1</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">2</field>
+	<field name="CommunityOwnedDate">2013-04-11T20:15:23.130</field>
+</doc>
+
+<doc>
+	<field name="Id">62</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">59</field>
+	<field name="CreationDate">2008-08-01T13:18:37.640</field>
+	<field name="Score">41</field>
+	<field name="Body">&lt;p&gt;&lt;strong&gt;The problem is that the Distinct
+ operator does not grant that it will
+ maintain the original order of
+ values.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;So your query will need to work like this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var names = (from DataRow  dr in dataTable.Rows
+             select (string)dr["Name"]).Distinct().OrderBy( name =&amp;gt; name );
+&lt;/code&gt;&lt;/pre&gt;
+</field>
+	<field name="OwnerUserId">45</field>
+	<field name="LastEditorUserId">1248536</field>
+	<field name="LastEditDate">2014-08-19T23:17:56.597</field>
+	<field name="LastActivityDate">2014-08-19T23:17:56.597</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">65</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">61</field>
+	<field name="CreationDate">2008-08-01T13:20:44.283</field>
+	<field name="Score">16</field>
+	<field name="Body">&lt;p&gt;&lt;a href="http://www.bram.us/2007/05/25/office-2007-mime-types-for-iis/" rel="nofollow noreferrer"&gt;Office 2007 MIME Types for IIS&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.docm&lt;/code&gt;, application/vnd.ms-word.document.macroEnabled.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.docx&lt;/code&gt;, application/vnd.openxmlformats-officedocument.wordprocessingml.document&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.dotm&lt;/code&gt;, application/vnd.ms-word.template.macroEnabled.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.dotx&lt;/code&gt;, application/vnd.openxmlformats-officedocument.wordprocessingml.template&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;. potm&lt;/code&gt;, application/vnd.ms-powerpoint.template.macroEnabled.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.potx&lt;/code&gt;, application/vnd.openxmlformats-officedocument.presentationml.template&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.ppam&lt;/code&gt;, application/vnd.ms-powerpoint.addin.macroEnabled.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.ppsm&lt;/code&gt;, application/vnd.ms-powerpoint.slid eshow.macroEnabled.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.ppsx&lt;/code&gt;, application/vnd.openxmlformats-officedocument.presentationml.slideshow&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.pptm&lt;/code&gt;, application/vnd.ms-powerpoint.presentation.macroEnabled.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.pptx&lt;/code&gt;, application/vnd.openxmlformats-officedocument.presentationml.presentation&lt;/ li&gt;
+&lt;li&gt;&lt;code&gt;.xlam&lt;/code&gt;, application/vnd.ms-excel.addin.macroEnabled.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.xlsb&lt;/code&gt;, application/vnd.ms-excel.sheet.binary.macroEnabled.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.xlsm&lt;/code&gt;, application/vnd.ms-excel.sheet.macroEnabled.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.xlsx&lt;/code&gt;, application/vnd.openxmlformat s-officedocument.spreadsheetml.sheet&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.xltm&lt;/code&gt;, application/vnd.ms-excel.template.macroEnabled.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.xltx&lt;/code&gt;, application/vnd.openxmlformats-officedocument.spreadsheetml.template&lt;/li&gt;
+&lt;/ul&gt;
+</field>
+	<field name="OwnerUserId">35</field>
+	<field name="LastEditorUserId">5898312</field>
+	<field name="LastEditDate">2017-01-02T03:57:33.723</field>
+	<field name="LastActivityDate">2017-01-02T03:57:33.723</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">66</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">4521</field>
+	<field name="CreationDate">2008-08-01T13:20:46.890</field>
+	<field name="Score">57</field>
+	<field name="ViewCount">4059</field>
+	<field name="Body">&lt;p&gt;How do you page through a collection in LINQ given that you have a &lt;code&gt;startIndex&lt;/code&gt; and a &lt;code&gt;count&lt;/code&gt;?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">17</field>
+	<field name="LastEditorUserId">1039608</field>
+	<field name="LastEditorDisplayName">Keith</field>
+	<field name="LastEditDate">2012-05-04T09:03:54 .213</field>
+	<field name="LastActivityDate">2016-09-27T06:10:13.900</field>
+	<field name="Title">Paging a collection with LINQ</field>
+	<field name="Tags">&lt;linq&gt;&lt;.net-3.5&gt;</field>
+	<field name="AnswerCount">4</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">5</field>
+</doc>
+
+<doc>
+	<field name="Id">68</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">66</field>
+	<field name="CreationDate">2008-08-01T13:22:04.483</field>
+	<field name="Score">53</field>
+	<field name="Body">&lt;p&gt;It is very simple with the &lt;code&gt;Skip&lt;/code&gt; and &lt;code&gt;Take&lt;/code&gt; extension methods.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var query = from i in ideas
+            select i;
+
+var paggedCollection = query.Skip(startIndex).Take(count);
+&lt;/code&gt; &lt;/pre&gt;
+</field>
+	<field name="OwnerUserId">17</field>
+	<field name="LastEditorUserId">1039608</field>
+	<field name="LastEditDate">2012-05-04T09:04:26.523</field>
+	<field name="LastActivityDate">2012-05-04T09:04:26.523</field>
+	<field name="CommentCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">71</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">19</field>
+	<field name="CreationDate">2008-08-01T13:37:59.723</field>
+	<field name="Score">63</field>
+	<field name="Body">&lt;p&gt;Here's a general description of a technique for calculating pi that I learnt in high school.&lt;/p&gt;
+
+&lt;p&gt;I only share this because I think it is simple enough that anyone can remember it, indefinitely, plus it teaches you the concept of "Monte-Carlo" methods -- whi ch are statistical methods of arriving at answers that don't immediately appear to be deducible through random processes.&lt;/p&gt;
+
+&lt;p&gt;Draw a square, and inscribe a quadrant (one quarter of a semi-circle) inside that square (a quadrant with radius equal to the side of the square, so it fills as much of the square as possible)&lt;/p&gt;
+
+&lt;p&gt;Now throw a dart at the square , and record where it lands -- that is, choose a random point anywhere inside the square. Of course, it landed inside the square, but is it inside the semi-circle? Record this fact.&lt;/p&gt;
+
+&lt;p&gt;Repeat this process many times -- and you will find there is a ratio of the number of points inside the semi-circle versus the total number thrown, call this ratio x.&lt;/p&gt;
+
+&lt;p &gt;Since the area of the square is r times r, you can deduce that the area of the semi circle is x times r times r (that is, x times r squared). Hence x times 4 will give you pi. &lt;/p&gt;
+
+&lt;p&gt;This is not a quick method to use. But it's a nice example of a Monte Carlo method. And if you look around, you may find that many problems otherwise outside your computational skills can be s olved by such methods.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">49</field>
+	<field name="OwnerDisplayName">Leon Bambrick</field>
+	<field name="LastEditorUserId">63550</field>
+	<field name="LastEditDate">2012-05-25T21:09:03.593</field>
+	<field name="LastActivityDate">2012-05-25T21:09:03.593</field>
+	<field name="CommentCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">72</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T13:38:27.133</field>
+	<field name="Score">29</field>
+	<field name="ViewCount">1124</field>
+	<field name="Body">&lt;p&gt;I want to format my existing comments as 'RDoc comments' so they can be viewed using &lt;code&gt;ri&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;What are some recommended resources for starting out using RDoc?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">25</field>
+	<field name="LastEditorUserId">2909897</field>
+	<field name="LastEditorDisplayName">Gaius</field>
+	<field name="LastEditDate">2016-12-30T06:56:18.310</field>
+	<field name="LastActivityDate">2016-12-30T06:56:18.310</field>
+	<field name="Title">How do I add existing comments to RDoc in Ruby?</field>
+	<field name="Tags">&lt;ruby&gt;&lt;rdoc&gt;</field>
+	<field name="AnswerCount">2</field>
+	<field name="CommentCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">73</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">25</field>
+	<field name="CreationDate">2008-08-01T13:40:16.443</field>
+	<field name="Score">13</field>
+	<field name="Body">&lt;p&gt;@Jax: The &lt;code&gt;extern "C"&lt;/code&gt; thing matters, very very much. If a header file doesn't have one, then (unless it's a C++-only header file), you would have to enclose your &lt;code&gt;#include&lt;/code&gt; with it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;extern "C" {
+#include &amp;lt;sys/socket.h&amp;gt;
+// include other similarly non-compliant header files
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Basically, anytime where a C++ program wants to link to C-based facilities, the &lt;code&gt;extern "C"&lt;/code&gt; is vital. In practical terms, it means that the names used in external references will not be mangled, like  normal C++ names would. &lt;a href="http://www.parashift.com/c++-faq-lite/mixing-c-and-cpp.html" rel="noreferrer"&gt;Reference.&lt;/a&gt;&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">13</field>
+	<field name="LastEditorUserId">13</field>
+	<field name="LastEditorDisplayName">Chris Jester-Young</field>
+	<field name="LastEditDate">2008-08-01T13:54:25.510</field>
+	<field name="LastActivityDate">2008-08-01T13:54:25.510</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">76</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">42</field>
+	<field name="CreationDate">2008-08-01T13:44:35.843</field>
+	<field name="Score">10</field>
+	<field name="Body">&lt;p&gt;I believe the easiest way would be to follow Jeff's own advice and have a look around existing code. Try looking at Wordpress, Drupal, Joomla and other well known PHP-based CMS's to see how their API hooks look and feel. This way you can even get ideas you may have not thought of previously  to make things a little more rubust.&lt;/p&gt;
+
+&lt;p&gt;A more direct answer would be to write general files that they would "include_once" into their file that would provide the usability they would need. This would be broken up into categories and NOT provided in one MASSIVE "hooks.php" file. Be careful though, because what ends up happening is that files that they i nclude end up having more and more dependencies and functionality improves. Try to keep API dependencies low. I.E fewer files for them to include.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">50</field>
+	<field name="LastActivityDate">2008-08-01T13:44:35.843</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">77</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">42</field>
+	<field name="CreationDate">2008-08-01T13:46:00.097</field>
+	<field name="Score">137</field>
+	<field name="Body">&lt;p&gt;You could use an Observer pattern.  A simple functional way to accomplish this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+
+/** Plugin system **/
+
+$listeners = array();
+
+/* Create an entry point for plugins */
+function hook() {
+    global $listen ers;
+
+    $num_args = func_num_args();
+    $args = func_get_args();
+
+    if($num_args &amp;lt; 2)
+        trigger_error("Insufficient arguments", E_USER_ERROR);
+
+    // Hook name should always be first argument
+    $hook_name = array_shift($args);
+
+    if(!isset($listeners[$hook_name]))
+        return; // No plugins have registered this hook 
+
+    foreach($listeners[$hook_name] as $func) {
+        $args = $func($args); 
+    }
+    return $args;
+}
+
+/* Attach a function to a hook */
+function add_listener($hook, $function_name) {
+    global $listeners;
+    $listeners[$hook][] = $function_name;
+}
+
+/////////////////////////
+
+/** Sample Plugin **/
+add_listener('a_b', 'my_plug in_func1');
+add_listener('str', 'my_plugin_func2');
+
+function my_plugin_func1($args) {
+    return array(4, 5);
+}
+
+function my_plugin_func2($args) {
+    return str_replace('sample', 'CRAZY', $args[0]);
+}
+
+/////////////////////////
+
+/** Sample Application **/
+
+$a = 1;
+$b = 2;
+
+list($a, $b) = hook('a_b', $a, $b);
+
+$str  =  "This is my sample application\n";
+$str .= "$a + $b = ".($a+$b)."\n";
+$str .= "$a * $b = ".($a*$b)."\n";
+
+$str = hook('str', $str);
+echo $str;
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is my CRAZY application
+4 + 5 = 9
+ 4 * 5 = 20
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For this example source code, you must declare all your plugins before the actual source code that you want to be extendable.  I've included an example of how to handle single or multiple values being passed to the plugin.  The hardest part of this is writing the actual documen tation which lists what arguments get passed to each hook.&lt;/p&gt;
+
+&lt;p&gt;This is just one method of accomplishing a plugin system in PHP.  There are better alternatives, I suggest you check out the WordPress Documentation for more information.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Sorry, it appears underscore characters are replaced by HTML entities by Markdown?  I can re-post this co de when this bug gets fixed.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Edit: Nevermind, it only appears that way when you are editing&lt;/em&gt;&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">40</field>
+	<field name="LastEditorUserId">4380409</field>
+	<field name="LastEditDate">2017-02-20T11:18:33.207</field>
+	<field name="LastActivityDate">2017-02-20T11:18:33.207</field>
+	<field name="CommentCount">2</field>
+	<field name="CommunityOwnedDate">2011-02-10T01:43:58.203</field>
+</doc>
+
+<doc>
+	<field name="Id">78</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">4</field>
+	<field name="CreationDate">2008-08-01T13:53:06.357</field>
+	<field name="Score">42</field>
+	<field name="Body">&lt;p&gt;It sounds like &lt;code&gt;this.Opacity&lt;/code&gt; is a double value, and the compiler doesn't like you trying to cram a decimal value into it.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">55</field>
+	<field name="LastEditorUserId">967315</field>
+	<field name="LastEditDate">2012-10-14T11:54:40.347</field>
+	<field name="LastActivityDate">2012-10-14T11:54:40.347</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">79</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">62853</field>
+	<field name="CreationDate">2008-08-01T13:56:33.837</field>
+	<field name="Score">29</field>
+	<field name="ViewCount">10618</field>
+	<field name="Body">&lt;p&gt;The version of &lt;strong&gt;Subclipse (1.2.4)&lt;/strong&gt; currently available through Aptana's automatic &lt;em&gt;Plugins Manager&lt;/em&gt; does not work with the newest version of Subversion.&lt;/p&gt;
+
+&lt;p&gt;I see on the Subclipse website howe ver that they have 1.4.2 out for Eclipse. So I added a &lt;a href="http://subclipse.tigris.org/update_1.4.x" rel="noreferrer"&gt;new remote update site&lt;/a&gt; to my Update manager. When I tried to install it, it told me I needed &lt;strong&gt;Mylyn 3.0.0&lt;/strong&gt;. So after much searching I found Mylyn 3.0.0 and added &lt;a href="http://download.eclipse.org/tools/my lyn/update/e3.3" rel="noreferrer"&gt;another new remote update site&lt;/a&gt; to my update manager. Then when I tried to install that, it told me I needed &lt;strong&gt;org.eclipse.ui 3.3.0&lt;/strong&gt; or equivalent.&lt;/p&gt;
+
+&lt;p&gt;Looking at the configuration details for Aptana, it looks like it is built against eclipse 3.2.2.&lt;/p&gt;
+
+&lt;p&gt;Does anyone  know if there is a way to upgrade the version of Eclipse Aptana that is built against to 3.3.0? Or if there is some other way to get Subclipse to work with the very newest version of Subversion?&lt;/p&gt;
+
+&lt;p&gt;I know this isn't necessarily a "programming" question, but I hope it's ok since it's highly relevant to the programming experience.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">58</field>
+	<field name="OwnerDisplayName">Christopher McCulloh</field>
+	<field name="LastEditorUserId">415755</field>
+	<field name="LastEditorDisplayName">Gaius</field>
+	<field name="LastEditDate">2016-03-10T03:47:08.200</field>
+	<field name="LastActivityDate">2016-03-10T03:47:08.200</field>
+	<field name="Title">Getting Subclipse in Aptana to work with the newest release of Subversion</field>
+	<field name="Tags">&lt;eclipse&gt;&lt;svn&gt;&lt;aptana&gt;&lt;subclipse&gt;</field>
+	<field name="AnswerCount">4</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">80</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">124</field>
+	<field name="CreationDate">2008-08-01T13:57:07.033</field>
+	<field name="Score">30</field>
+	<field name="ViewCount">4613</field>
+	<field name="Body">&lt;p&gt;I've written a database generation script in &lt;a href="http://en.wikipedia.org/wiki/SQL" rel="nofollow noreferrer"&gt;SQL&lt;/a&gt; and want to execute it in my &lt;a href="http://en.wikipedia.org/wiki/Adobe_Integrated_Runtime" rel="nofollow noreferrer"&gt;Adobe AIR&lt;/a&gt; application:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Create Table tRole (
+    roleID integer Primary Key
+    ,roleName varchar(40)
+);
+Create Table tFile (
+    fileID integer Primary Key
+    ,fileName varchar(50)
+    ,fileDescription varchar(500)
+    ,thumbnailID integer
+    ,fileFormatID integer
+    ,categoryID integer
+    ,isFavorite boolean
+    ,dateAdded date
+    ,globalAccessCount integer
+    ,lastAccessTime date
+    ,downloadComplete boolean
+    ,isNew boolean
+    ,isSpotlight boolean
+    ,duration varchar(30)
+);
+Create Table tCategory (
+    categoryID integer Primary Key
+    ,categoryName varchar(50)
+     ,parent_categoryID integer
+);
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I execute this in Adobe AIR using the following methods:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public static function RunSqlFromFile(fileName:String):void {
+    var file:File = File.applicationDirectory.resolvePath(fileName);
+    var stream:FileStream = new FileStream();
+    stream.open(file,  FileMode.READ)
+    var strSql:String = stream.readUTFBytes(stream.bytesAvailable);
+    NonQuery(strSql);
+}
+
+public static function NonQuery(strSQL:String):void {
+    var sqlConnection:SQLConnection = new SQLConnection();
+    sqlConnection.open(File.applicationStorageDirectory.resolvePath(DBPATH));
+    var sqlStatement:SQLStatement = new SQLStatement();
+    sqlSt atement.text = strSQL;
+    sqlStatement.sqlConnection = sqlConnection;
+    try {
+        sqlStatement.execute();
+    } catch (error:SQLError) {
+        Alert.show(error.toString());
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;No errors are generated, however only &lt;code&gt;tRole&lt;/code&gt; exists. It seems that it only looks at the first query (up to the  semicolon- if I remove it, the query fails). Is there a way to call multiple queries in one statement?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">26</field>
+	<field name="LastEditorUserId">3641067</field>
+	<field name="LastEditorDisplayName">modesty</field>
+	<field name="LastEditDate">2017-04-28T13:42:44.903</field>
+	<field name="LastActivityDate">2017-04-28T13:42:44.903</field>
+	<field name="Title">SQLStatement.execute() - multiple queries in one statement</field>
+	<field name="Tags">&lt;flex&gt;&lt;actionscript-3&gt;&lt;air&gt;</field>
+	<field name="AnswerCount">3</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">81</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">34</field>
+	<field name="CreationDate">2008-08-01T14:03:22.230</field>
+	<field name="Score">11</field>
+	<field name="Body">&lt;p&gt;I believe you have answered your own question...&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;System.totalMemory&lt;/code&gt; gives you the total amount of memory being "used", not allocated. It is accurate that your application may only be using 20mb, but it has 5mb that is free for f uture allocations.&lt;/p&gt;
+
+&lt;p&gt;I'm not sure if the Adobe docs would shed light on the way that it manages memory...&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">41</field>
+	<field name="LastEditorUserId">967315</field>
+	<field name="LastEditDate">2012-10-14T12:18:19.590</field>
+	<field name="LastActivityDate">2012-10-14T12:18:19.590</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">82</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">36</field>
+	<field name="CreationDate">2008-08-01T14:06:28.560</field>
+	<field name="Score">14</field>
+	<field name="Body">&lt;p&gt;Have a DTS job (or a job that is started by a windows service) that runs at a given interval. Each time it is run, it gets information about the given table by using the system &lt;a href="http://msdn.microsoft.com/en-us/library/ms186778.aspx" rel="noreferrer"&gt;INFORMA TION_SCHEMA&lt;/a&gt; tables, and records this data in the data repository. Compare the data returned regarding the structure of the table with the data returned the previous time. If it is different, then you know that the structure has changed.&lt;/p&gt;
+
+&lt;p&gt;Example query to return information regarding all of the columns in table ABC (ideally listing out just the columns from the I NFORMATION_SCHEMA table that you want, instead of using *select ** like I do here):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;select * from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'ABC'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You would monitor different columns and INFORMATION_SCHEMA views depending on how exactly you define "changes to a table".&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">51</field>
+	<field name="LastActivityDate">2008-08-01T14:06:28.560</field>
+	<field name="CommentCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">84</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">16</field>
+	<field name="CreationDate">2008-08-01T14:10:55.757</field>
+	<field name="Score">9</field>
+	<field name="Body">&lt;p&gt;If you use a return type of &lt;code&gt;IEnumerable&lt;/code&gt;, you can return your &lt;strong&gt;query&lt;/strong&gt; variable directly.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">60</field>
+	<field name="LastEditorUserId">5469</field>
+	<field name="LastEditorDisplayName">Kilhoffer</field>
+	<field name="LastEditDate">2008-10-18T18:26:59.070</field>
+	<field name="LastActivityDate">2008 -10-18T18:26:59.070</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">85</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">154</field>
+	<field name="CreationDate">2008-08-01T14:19:52.510</field>
+	<field name="Score">92</field>
+	<field name="ViewCount">40071</field>
+	<field name="Body">&lt;p&gt;What are your best practices around creating flat file database structures in PHP?  A lot of the more mature PHP flat file frameworks I see out there attempt to implement SQL-like query syntax, which is over the top for my purposes in most cases (I would just use  a database at that point).&lt;/p&gt;
+
+&lt;p&gt;Are there any elegant tricks out there to get good performance and features with the small code overhead one would want by taking on this problem in the first place?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">59</field>
+	<field name="LastEditorUserId">243557</field>
+	<field name="LastEditorDisplayName">saint_groceon</field>
+	<field name="LastEditDate">2013-10-04T01:17:44.297</field>
+	<field name="LastActivityDate">2015-08-24T17:50:22.107</field>
+	<field name="Title">Flat File Databases</field>
+	<field name="Tags">&lt;php&gt;&lt;sql&gt;&lt;database&gt;&lt;flat-file&gt;</field>
+	<field name="AnswerCount">12</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">19</field>
+</doc>
+
+<doc>
+	<field name="Id">86</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">4</field>
+	<field name="CreationDate">2008-08-01T14:23:28.087</field>
+	<field name="Score">97</field>
+	<field name="Body">&lt;p&gt;A more generic answer for the generic question "Decimal vs Double?": &lt;strong&gt;Decimal&lt;/strong&gt; for monetary calculations to preserve the precision, &lt;strong&gt;Double&lt;/strong&gt; for scientific calculations that do not get affected by small differences. Since Double  is a type which is native to the CPU (internal representation is stored in &lt;em&gt;base 2&lt;/em&gt;), calculations made with Double perform better then Decimal (which is represented in &lt;em&gt;base 10&lt;/em&gt; internally).&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">39</field>
+	<field name="LastEditorUserId">2354564</field>
+	<field name="LastEditorDisplayName">huseyint</field>
+	<field name="LastEditDate">2014-07-11T14:42:28.547</field>
+	<field name="LastActivityDate">2014-07-11T14:42:28. 547</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">87</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">85</field>
+	<field name="CreationDate">2008-08-01T14:26:22.793</field>
+	<field name="Score">10</field>
+	<field name="Body">&lt;p&gt;One framework I'm considering would be for a blogging platform. Since just about any possible view of data you would want would be sorted by date, I was thinking about this structure:&lt;/p&gt;
+
+&lt;p&gt;One directory per content node:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./con tent/YYYYMMDDHHMMSS/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Subdirectories of each node including  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/tags  
+/authors  
+/comments  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As well as simple text files in the node directory for pre- and post-rendered content and the like.&lt;/p&gt;
+
+&lt;p&gt;This would allow a simple PHP &lt;a  href="http://us3.php.net/glob" rel="noreferrer"&gt;&lt;code&gt;glob()&lt;/code&gt;&lt;/a&gt; call (and probably a reversal of the result array) to query on just about anything within the content structure:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;glob("content/*/tags/funny");  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Would return paths including all articles  tagged "funny".&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">59</field>
+	<field name="LastEditorUserId">4551041</field>
+	<field name="LastEditDate">2015-08-24T17:19:04.537</field>
+	<field name="LastActivityDate">2015-08-24T17:19:04.537</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">88</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">98</field>
+	<field name="CreationDate">2008-08-01T14:36:18.640</field>
+	<field name="Score">74</field>
+	<field name="ViewCount">34942</field>
+	<field name="Body">&lt;p&gt;So I find myself porting a game, that was originally written for the Win32 API, to Linux (well, porting the OS X port of the Win32 port to Linux). I have implemented &lt;code&gt;QueryPerformanceCounter&lt;/code&gt; by giving the uSeconds since the process start up:   &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;BOOL QueryPerformanceCounter(LARGE_INTEGER* performanceCount)
+{
+    gettimeofday(&amp;amp;currentTimeVal, NULL);
+    performanceCount-&amp;gt;QuadPart = (currentTimeVal.tv_sec - startTimeVal.tv_sec);
+    performanceCount-&amp;gt;QuadPart *= (1000 * 1000);
+    performanceCount-&amp;gt;QuadPart += (currentTimeVal.tv_usec - startTimeVal. tv_usec);
+
+    return true;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This, coupled with &lt;code&gt;QueryPerformanceFrequency()&lt;/code&gt; giving a constant 1000000 as the frequency, works well &lt;b&gt;on my machine&lt;/b&gt;, giving me a 64 bit variable that contains &lt;code&gt;uSeconds&lt;/code&gt; since the program's start up. So &lt;em&gt;is this portable?&lt;/em&gt; I  don't want to discover it works differently if the kernel was compiled in a certain way or anything like that. I am fine with it being non-portable to something other than Linux, however.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">61</field>
+	<field name="LastEditorDisplayName">user1645055</field>
+	<field name="LastEditDate">2012-11-27T07:20:52.437</field>
+	<field name="LastActivityDate">2016-02-11T04:02:08.480</field>
+	<field name="Title">Is gettimeofday() guaranteed to be of microsecond resol ution?</field>
+	<field name="Tags">&lt;linux&gt;&lt;winapi&gt;&lt;visual-c++&gt;&lt;unix&gt;&lt;timer&gt;</field>
+	<field name="AnswerCount">10</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">16</field>
+</doc>
+
+<doc>
+	<field name="Id">89</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">79</field>
+	<field name="CreationDate">2008-08-01T14:41:01.110</field>
+	<field name="Score">4</field>
+	<field name="Body">&lt;p&gt;I've had problems with JavaHL in Eclipse Ganymede, when it worked fine in Eclipse Europa.  I'm not sure how Aptana is different, but try either upgrading JavaHL or switching to the pure-java SVNKit implementation within the Subclipse config.&lt;/p&gt;
+</field>
+	<field name="OwnerDisplayName">Ted Dziuba</field>
+	<field name="LastActivityDate">2008-08-01T14:41:01.110</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">90</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T14:41:24.277</field>
+	<field name="Score">149</field>
+	<field name="ViewCount">53817</field>
+	<field name="Body">&lt;p&gt;Are there any really good tutorials explaining &lt;a href="http://svnbook.red-bean.com/en/1.8/svn.branchmerge.html" rel="noreferrer"&gt;branching and merging&lt;/a&gt; with Apache Subversion? &lt;/p&gt;
+
+&lt;p&gt;All the better if it's specific to TortoiseSV N client.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">58</field>
+	<field name="OwnerDisplayName">Christopher McCulloh</field>
+	<field name="LastEditorUserId">761095</field>
+	<field name="LastEditorDisplayName">Gaius</field>
+	<field name="LastEditDate">2016-06-23T13:23:04.250</field>
+	<field name="LastActivityDate">2016-06-23T13:23:04.250</field>
+	<field name="Title">Good branching and merging tutorials for TortoiseSVN?</field>
+	<field name="Tags">&lt;svn&gt;&lt;tortoisesvn&gt;&lt;branch&gt;&lt;branching-and-merging&gt;</field>
+	<field name="AnswerCount">3</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">92</field>
+</doc>
+
+<doc>
+	<field name="Id">92</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">90</field>
+	<field name="CreationDate">2008-08-01T14:45:37.403</field>
+	<field name="Score">14</field>
+	<field name="Body">&lt;p&gt;&lt;a href="http://svnbook.red-bean.com/" rel="noreferrer"&gt;Version Control with Subversion&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A very good resource for source control in general. Not really TortoiseSVN specific, though.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">61</field>
+	<field name="LastActivityDate">2008-08-01T14:45:37.403</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">93</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">88</field>
+	<field name="CreationDate">2008-08-01T14:46:53.097</field>
+	<field name="Score">3</field>
+	<field name="Body">&lt;p&gt;From my experience, and from what I've read across the internet, the answer is "No," it is not guaranteed.  It depends on CPU speed, operating system, flavor of Linux, etc.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">25</field>
+	<field name="LastEditorUserId">25</field>
+	<field name="LastEditorDisplayName">Chris Reath</field>
+	<field name="LastEditDate">2008 -08-01T15:01:13.003</field>
+	<field name="LastActivityDate">2008-08-01T15:01:13.003</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">98</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">88</field>
+	<field name="CreationDate">2008-08-01T14:53:47.497</field>
+	<field name="Score">49</field>
+	<field name="Body">&lt;p&gt;Maybe. But you have bigger problems. &lt;code&gt;gettimeofday()&lt;/code&gt; can result in incorrect timings if there are processes on your system that change the timer (ie, ntpd). On a "normal" linux, though, I believe the resolution of &lt;code&gt;gettimeofday()&lt;/code&gt; is  10us. It can jump forward and backward and time, consequently, based on the processes running on your system. This effectively makes the answer to your question no.&lt;/p&gt;
+
+&lt;p&gt;You should look into &lt;code&gt;clock_gettime(CLOCK_MONOTONIC)&lt;/code&gt; for timing intervals. It suffers from several less issues due to things like multi-core systems and external clock settings.&lt;/p&gt;
+
+&lt;p&gt;Also, look into the &lt;code&gt;clock_getres()&lt;/code&gt; function.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">2089740</field>
+	<field name="LastEditorUserId">967315</field>
+	<field name="LastEditorDisplayName">lbrandy</field>
+	<field name="LastEditDate">2012-10-14T12:28:51.043</field>
+	<field name="LastActivityDate">2012-10-14T12:28:51.043</field>
+	<field name="CommentCount">5</field>
+</doc>
+
+<doc>
+	<field name="Id">99</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">88</field>
+	<field name="CreationDate">2008-08-01T14:55:08.477</field>
+	<field name="Score">7</field>
+	<field name="Body">&lt;blockquote&gt;
+  &lt;p&gt;The actual resolution of gettimeofday() depends on the hardware architecture. Intel processors as well as SPARC machines offer high resolution timers that measure microseconds. Other hardware architectures fall back to the system¡¯s timer, which is typically set to  100 Hz. In such cases, the time resolution will be less accurate. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I obtained this answer from &lt;a href="http://www.informit.com/guides/content.aspx?g=cplusplus&amp;amp;seqNum=272" rel="noreferrer"&gt;High Resolution Time Measurement and Timers, Part I&lt;/a&gt;&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">25</field>
+	<field name="LastActivityDate">2008-08-01T14 :55:08.477</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">100</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">85</field>
+	<field name="CreationDate">2008-08-01T14:58:15.430</field>
+	<field name="Score">14</field>
+	<field name="Body">&lt;p&gt;That's true.  &lt;code&gt;serialize()&lt;/code&gt; can be pretty useful for that as well.&lt;/p&gt;
+
+&lt;p&gt;I think the trick to coming up with a viable system is finding some way to index the data nodes without killing yourself with complexity.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">59</field>
+	<field name="LastEditorUserId">967315</field>
+	<field name="LastEditDate">2012-10-14T12:28:29.997</field>
+	<field name="LastActivityDate">2012-10-14T12:28:29.997</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">103</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">13</field>
+	<field name="CreationDate">2008-08-01T15:11:59.987</field>
+	<field name="Score">43</field>
+	<field name="Body">&lt;p&gt;Javascript is the easiest way to get the client's local time.  I would suggest using an &lt;code&gt;XMLHttpRequest&lt;/code&gt; to send back the local time, and if that fails, fall back to the timezone detected based on their IP address.&lt;/p&gt;
+
+&lt;p&gt;As far as geolocation, I 've used &lt;a href="http://www.maxmind.com/app/ip-location" rel="noreferrer"&gt;MaxMind GeoIP&lt;/a&gt; on several projects and it works well, though I'm not sure if they provide timezone data.  It's a service you pay for and they provide monthly updates to your database.  They provide wrappers in several web languages.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">72</field>
+	<field name="LastEditorUserId">1039608 </field>
+	<field name="LastEditDate">2012-05-04T08:59:38.580</field>
+	<field name="LastActivityDate">2012-05-04T08:59:38.580</field>
+	<field name="CommentCount">3</field>
+</doc>
+
+<doc>
+	<field name="Id">104</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">112</field>
+	<field name="CreationDate">2008-08-01T15:12:34.837</field>
+	<field name="Score">146</field>
+	<field name="ViewCount">10377</field>
+	<field name="Body">&lt;p&gt;In .NET perspective:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is a &lt;strong&gt;&lt;a href="http://en.wikipedia.org/wiki/Memory_leak" rel="noreferrer"&gt;Memory Leak&lt;/a&gt;&lt;/strong&gt;?&lt;/li&gt;
+&lt;li&gt;How can you dete rmine whether your application leaks? What are the effects?&lt;/li&gt;
+&lt;li&gt;How can you prevent a memory leak?&lt;/li&gt;
+&lt;li&gt;If your application has memory leak, does it go away when the process exits or is killed? Or do memory leaks in your application affect other processes on the system even after process completion?&lt;/li&gt;
+&lt;li&gt;And what about unmanaged code acce ssed via COM Interop and/or P/Invoke?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I have some answers for these questions myself, but they are incomplete. What do you think?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">39</field>
+	<field name="LastEditorDisplayName">user1645055</field>
+	<field name="LastEditDate">2012-11-27T07:26:29.273</field>
+	<field name="LastActivityDate">2017-05-06T09:04:13.903</field>
+	<field name="Title">Anatomy of a "Memory Leak"</field>
+	<field name="Tags">&lt;.net&gt;&lt;performa nce&gt;&lt;memory-leaks&gt;&lt;com-interop&gt;</field>
+	<field name="AnswerCount">15</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">62</field>
+</doc>
+
+<doc>
+	<field name="Id">107</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">104</field>
+	<field name="CreationDate">2008-08-01T15:19:25.900</field>
+	<field name="Score">10</field>
+	<field name="Body">&lt;p&gt;I guess in a managed environment, a leak would be you keeping an unnecessary reference to a large chunk of memory around.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">61</field>
+	<field name="LastActivityDate">2008-08-01T15:19:25.900</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">108</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">111</field>
+	<field name="CreationDate">2008-08-01T15:22:29.467</field>
+	<field name="Score">36</field>
+	<field name="ViewCount">14708</field>
+	<field name="Body">&lt;p&gt;I've been using &lt;a href="http://tortoisesvn.tigris.org/" rel="noreferrer"&gt;TortoiseSVN &lt;/a&gt; in a Windows environment for quite some time.  It seems very feature-complete and nicely integrated into the Windows shell, and more importa ntly, it's fairly painless to teach to colleagues with little or no experience with source control.  &lt;strong&gt;However&lt;/strong&gt;, since we have moved to Windows Vista 64bit, Tortoise has been very buggy and has seemed to cause lots of explorer.exe abnormalities and crashes.  This has happened both with older versions of the software and the latest version (1.5.1 build 13563).&lt;/p&gt;
+
+&lt;p&gt;I was curious if anyone has suggestions for other Subversion clients that will run on Windows (specifically Vista 64bit).  Developers here use a variety of text editors so using Visual Studio or Dreamweaver for SVN is not ideal.&lt;/p&gt;
+
+&lt;p&gt;I have heard great things about &lt;a href="http://www.zennaware.com/cornerstone/" rel="noreferrer"&gt;Corner stone&lt;/a&gt;, and would love something similar for Windows if it exists.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;I'm correlating the Vista/explorer problems with Tortoise because they normally occur when I'm using the functionality in Tortoise.  Sometimes bringing up the "merge" screen will cause the GUI to start acting very strange and eventually hang or crash.&lt;/p&gt;
+
+&lt;p&gt;I did not see 1.5.2 -- I'm installing now, maybe that will fix some of my issues.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">72</field>
+	<field name="LastEditorUserId">1288</field>
+	<field name="LastEditorDisplayName">Adam Mitz</field>
+	<field name="LastEditDate">2011-11-20T13:46:24.733</field>
+	<field name="LastActivityDate">2013-11-07T16:52:15.250</field>
+	<field name="Title">Best Subversion clients for Windows Vista (64bit)</field>
+	<field name="Tags">&lt;windows&gt;&lt;svn&gt;&lt;64bit&gt;</field>
+	<field name="AnswerCount">8</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">109</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">2585</field>
+	<field name="CreationDate">2008-08-01T15:23:05.190</field>
+	<field name="Score">37</field>
+	<field name="ViewCount">4376</field>
+	<field name="Body">&lt;p&gt;Recently our site has been deluged with the resurgence of the &lt;a href="https://en.wikipedia.org/wiki/Asprox_botnet" rel="noreferrer"&gt;Asprox botnet&lt;/a&gt; &lt;a href="http://en.wikipedia.org/wiki/SQL_injection" rel="nore ferrer"&gt;SQL injection&lt;/a&gt; attack. Without going into details, the attack attempts to execute SQL code by encoding the &lt;a href="http://en.wikipedia.org/wiki/Transact-SQL" rel="noreferrer"&gt;T-SQL&lt;/a&gt; commands in an ASCII encoded BINARY string. It looks something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DECLARE%20@S%20NVARCHAR(4000);SET%20@S=CAS T(0x44004500...06F007200%20AS%20NVARCHAR(4000));EXEC(@S);--
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I was able to decode this in SQL, but I was a little wary of doing this since I didn't know exactly what was happening at the time.&lt;/p&gt;
+
+&lt;p&gt;I tried to write a simple decode tool, so I could decode this type of text without even touching &lt;a href="http://en.wikipedia .org/wiki/Microsoft_SQL_Server" rel="noreferrer"&gt;SQL&amp;nbsp;Server&lt;/a&gt;. The main part I need decoded is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CAST(0x44004500...06F007200 AS
+NVARCHAR(4000))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I've tried all of the following commands with no luck:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;txtDecodedText.Text =
+    Sy stem.Web.HttpUtility.UrlDecode(txtURLText.Text);
+txtDecodedText.Text =
+    Encoding.ASCII.GetString(Encoding.ASCII.GetBytes(txtURLText.Text));
+txtDecodedText.Text =
+    Encoding.Unicode.GetString(Encoding.Unicode.GetBytes(txtURLText.Text));
+txtDecodedText.Text =
+    Encoding.ASCII.GetString(Encoding.Unicode.GetBytes(txtURLText.Text));
+txtDecodedText.Text =
+    Encodi ng.Unicode.GetString(Convert.FromBase64String(txtURLText.Text));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What is the proper way to translate this encoding without using SQL Server? Is it possible? I'll take VB.NET code since I'm familiar with that too.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Okay, I'm sure I'm missing something here, so here's where I'm at.&lt;/p&gt;
+
+&lt;p&gt;Since my input is a basic string, I started with just a snippet of the encoded portion - 4445434C41 (which translates to DECLA) - and the first attempt was to do this...&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;txtDecodedText.Text = Encoding.UTF8.GetString(Encoding.UTF8.GetBytes(txtURL.Text));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;...and all it did was return the exact same thing that  I put in, since it converted each character into is byte.&lt;/p&gt;
+
+&lt;p&gt;I realized that I need to parse each two characters into a byte manually since I don't know of any methods yet that will do that, so now my little decoder looks something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;while (!boolIsDone)
+{
+    bytURLChar = byte.Parse(txtURLText.Text.Substring(intPar seIndex, 2));
+    bytURL[intURLIndex] = bytURLChar;
+    intParseIndex += 2;
+    intURLIndex++;
+
+    if (txtURLText.Text.Length - intParseIndex &amp;lt; 2)
+    {
+        boolIsDone = true;
+    }
+}
+
+txtDecodedText.Text = Encoding.UTF8.GetString(bytURL);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Things look good for the first couple of pairs, but then  the loop balks when it gets to the "4C" pair and says that the string is in the incorrect format.&lt;/p&gt;
+
+&lt;p&gt;Interestingly enough, when I step through the debugger and to the GetString method on the byte array that I was able to parse up to that point, I get ",-+" as the result.&lt;/p&gt;
+
+&lt;p&gt;How do I figure out what I'm missing - do I need to do a  "direct cast" for each byte instead of attempting to parse it?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">71</field>
+	<field name="LastEditorUserId">63550</field>
+	<field name="LastEditorDisplayName">Jeff Atwood</field>
+	<field name="LastEditDate">2015-01-08T16:27:49.863</field>
+	<field name="LastActivityDate">2015-01-08T17:02:44.503</field>
+	<field name="Title">Decoding T-SQL CAST in C#/VB.NET</field>
+	<field name="Tags">&lt;c#&gt;&lt;sql&gt;&lt;vb.net&gt;&lt;ascii&gt;&lt;hex&gt;</field>
+	<field name="AnswerCount">2</field>
+	<field name="CommentCount">3</field>
+</doc>
+
+<doc>
+	<field name="Id">110</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">104</field>
+	<field name="CreationDate">2008-08-01T15:23:33.817</field>
+	<field name="Score">5</field>
+	<field name="Body">&lt;p&gt;I will concur with Bernard as to in .net what a mem leak would be.&lt;/p&gt;
+
+&lt;p&gt;You could profile your application to see its memory use, and determine that if its managing a lot of memory when it should not be you could say it has a leak.&lt;/p&gt;
+
+&lt;p&gt;In mana ged terms I will put my neck on the line to say it does go away once the process is killed/removed.&lt;/p&gt;
+
+&lt;p&gt;Unmanaged code is its own beast and if a leak exists within it, it will follow a standard mem. leak definition.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">36</field>
+	<field name="LastEditorUserId">3393505</field>
+	<field name="LastEditDate">2015-11-30T21:14:09.740</field>
+	<field name="LastActivityDate">2015-11-30T21:14:09.740</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">111</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">108</field>
+	<field name="CreationDate">2008-08-01T15:27:23.093</field>
+	<field name="Score">37</field>
+	<field name="Body">&lt;p&gt;I have been using the 64Bit version of TortoiseSVN for ages and I have never had issues with it on Windows 64Bit or Vista 64Bit. I am currently not aware of any other similiar SVN clients that do work on Vista. Is it possible the problem could lie within the configuration of TortoiseSVN o r even the installation of Vista? Is the problem occurring on Vista native or SP 1?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">146270</field>
+	<field name="OwnerDisplayName">Diago</field>
+	<field name="LastActivityDate">2008-08-01T15:27:23.093</field>
+	<field name="CommentCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">112</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">104</field>
+	<field name="CreationDate">2008-08-01T15:28:12.543</field>
+	<field name="Score">97</field>
+	<field name="Body">&lt;p&gt;The best explanation I've seen is in Chapter 7 of the free &lt;a href="http://codebetter.com/karlseguin/2008/06/25/foundations-of-programming-ebook/" rel="noreferrer"&gt;Foundations of Programming ebook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Basically, in .NET a memory  leak occurs when referenced objects are rooted and thus cannot be garbage collected. This occurs accidentally when you hold on to references beyond the intended scope.&lt;/p&gt;
+
+&lt;p&gt;You'll know that you have leaks when you start getting outofmemoryexceptions or your memory usage goes up beyond what you'd expect (perfmon has nice memory counters). &lt;/p&gt;
+
+&lt;p&gt;Understa nding .NET's memory model is your best way of avoiding it. Specifically, understanding how the garbage collector works and how references work (again, I refer you to chapter 7 of the ebook). Also, be mindful of common pitfalls, probably the most common being events. If object A registered to an event on object B, then object A will stick around until object B disappears because B holds a reference  to A. The solution is to unregister your events when you're done. &lt;/p&gt;
+
+&lt;p&gt;Of course, a good memory profile will let you see your object graphs and explore the nesting/referencing of your objects to see where references are coming from and what root object is responsible (&lt;a href="http://www.red-gate.com/products/ants_memory_profiler/index.htm" rel="noreferrer"&gt;red-gate ants profile&lt;/a&gt;, JetBrains dotMemory, &lt;a href="http://memprofiler.com/" rel="noreferrer"&gt;memprofiler&lt;/a&gt; are really good choices, or you can use the text-only windbg and sos, but I'd strongly recommend a commercial/visual product unless you're a real guru).&lt;/p&gt;
+
+&lt;p&gt;I believe unmanaged code is subject to typical memory leak s of unamanged code, except that references shared between the two are managed by the garbage collector. Could be wrong about this last point.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">34</field>
+	<field name="LastEditorUserId">2932052</field>
+	<field name="LastEditorDisplayName">GateKiller</field>
+	<field name="LastEditDate">2016-11-09T14:14:53.480</field>
+	<field name="LastActivityDate">2016-11-09T14:14:53.480</field>
+	<field name="CommentCount">6</field>
+</doc>
+
+<doc>
+	<field name="Id">113</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">108</field>
+	<field name="CreationDate">2008-08-01T15:32:11.337</field>
+	<field name="Score">7</field>
+	<field name="Body">&lt;p&gt;I'll second Diago's answer.  I use TortoiseSVN on Vista x64 pretty heavily.&lt;/p&gt;
+
+&lt;p&gt;I did upgrade directly from an older version to 1.5.2 though, and never used 1.5.1.  Have you tried 1.5.2?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">60</field>
+	<field name="LastActivityDate">2008-08-01T15:32:11.337</field>
+	<field name="CommentCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">114</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">108</field>
+	<field name="CreationDate">2008-08-01T15:32:42.473</field>
+	<field name="Score">10</field>
+	<field name="Body">&lt;p&gt;TortoiseSVN in combination with VisualSVN for Visual Studio.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">17</field>
+	<field name="LastEditorUserId">761095</field>
+	<field name="LastEditDate">2013-11-07T16:52:15.250</field>
+	<field name="LastActivityDate">2013-11-07T16:52:15.250</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">116</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">108</field>
+	<field name="CreationDate">2008-08-01T15:34:43.873</field>
+	<field name="Score">5</field>
+	<field name="Body">&lt;p&gt;I too get explorer crashes in Vista (I'm not in the 64Bit version though). I'm using Vista Super Saijen (or whatever they are calling the most expensive version). I'm not having any bugs with Tortoise.&lt;/p&gt;
+
+&lt;p&gt;My explorer does, however, crash about every other day (some times multiple times a day if it's having an "off" day). I'm not positive it's being caused by TortoiseSVN though. From what I hear, the explorer just crashes a lot in Vista...&lt;/p&gt;
+
+&lt;p&gt;Have you tried uninstalling Tortoise and using Windows for a day or two and seeing if it still crashes? Do you restart your computer at least once a day (It seems the longer I go between  restarts, the worse the crashes get)?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">58</field>
+	<field name="LastActivityDate">2008-08-01T15:34:43.873</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">120</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T15:50:08.537</field>
+	<field name="Score">27</field>
+	<field name="ViewCount">1161</field>
+	<field name="Body">&lt;p&gt;Has anyone got experience creating &lt;strong&gt;SQL-based ASP.NET&lt;/strong&gt; site-map providers?&lt;/p&gt;
+
+&lt;p&gt;I've got the default XML file &lt;code&gt;web.sitemap&lt;/code&gt; working properly with my Menu and &lt;strong&gt;SiteMapPath&lt;/strong&gt; controls, but I 'll need a way for the users of my site to create and modify pages dynamically.&lt;/p&gt;
+
+&lt;p&gt;I need to tie page viewing permissions into the standard &lt;code&gt;ASP.NET&lt;/code&gt; membership system as well.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">83</field>
+	<field name="OwnerDisplayName">Zack</field>
+	<field name="LastEditorUserId">5092716</field>
+	<field name="LastEditorDisplayName">Leon Bambrick</field>
+	<field name="LastEditDate">2017-04-06T20:55:34.077</field>
+	<field name="LastActivityDate">2017-04-06T20:55:34.077</field>
+	<field name="Title">ASP.NET Site Maps</field>
+	<field name="Tags">&lt;sql&gt;&lt;asp.net&gt;&lt;xml&gt;&lt;sitemap&gt;</field>
+	<field name="AnswerCount">1</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">123</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">183</field>
+	<field name="CreationDate">2008-08-01T16:08:52.353</field>
+	<field name="Score">84</field>
+	<field name="ViewCount">61396</field>
+	<field name="Body">&lt;p&gt;Is there an existing application or library in &lt;em&gt;Java&lt;/em&gt; which will allow me to convert a &lt;code&gt;CSV&lt;/code&gt; data file to &lt;code&gt;XML&lt;/code&gt; file?  &lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;XML&lt;/code&gt; tags would be pro vided through possibly the first row containing column headings.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">78</field>
+	<field name="LastEditorUserId">2553431</field>
+	<field name="LastEditorDisplayName">Jeff Atwood</field>
+	<field name="LastEditDate">2015-10-27T09:34:09.503</field>
+	<field name="LastActivityDate">2016-04-10T20:56:11.613</field>
+	<field name="Title">Java lib or app to convert CSV to XML file?</field>
+	<field name="Tags">&lt;java&gt;&lt;xml&gt;&lt;csv&gt;&lt;data-conversion&gt;</field>
+	<field name="AnswerCount">16</field>
+	<field name="CommentCount">2</field>
+	<field name="FavoriteCount">17</field>
+</doc>
+
+<doc>
+	<field name="Id">124</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">80</field>
+	<field name="CreationDate">2008-08-01T16:09:47.687</field>
+	<field name="Score">15</field>
+	<field name="Body">&lt;p&gt;I wound up using this. It is a kind of a hack, but it actually works pretty well. The only thing is you have to be very careful with your semicolons. : D&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var strSql:String = stream.readUTFBytes(stream.bytesAvailable);      
+var i:Number = 0;
+var strSqlSplit:Array = strSql.split(";");
+for (i = 0; i &amp;lt; strSqlSplit.length; i++){
+    NonQuery(strSqlSplit[i].toString());
+}
+&lt;/code&gt;&lt;/pre&gt;
+</field>
+	<field name="OwnerUserId">26</field>
+	<field name="LastEditorUserId">63550</field>
+	<field name="LastEditDate">2013-08-09T17:23:42.920</field>
+	<field name="LastActivityDate">2013-08-09T17:23:42.920</field>
+	<field name="CommentCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">126</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">127</field>
+	<field name="CreationDate">2008-08-01T16:10:30.337</field>
+	<field name="Score">73</field>
+	<field name="ViewCount">9130</field>
+	<field name="Body">&lt;p&gt;What is the "purist" or "correct" way to access an object's properties from within an object method that is not a getter/setter method?&lt;/p&gt;
+
+&lt;p&gt;I know that from outside of the object you should use a getter/setter, but from  within would you just do:&lt;/p&gt;
+
+&lt;p&gt;Java:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;String property = this.property;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;PHP:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$property = $this-&amp;gt;property;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or would you do:&lt;/p&gt;
+
+&lt;p&gt;Java:&lt;/p&gt;
+
+&lt;pre&gt;&lt;co de&gt;String property = this.getProperty();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;PHP:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$property = $this-&amp;gt;getProperty();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Forgive me if my Java is a little off, it's been a year since I programmed in Java...&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p &gt;It seems people are assuming I am talking about private or protected variables/properties only. When I learned OO I was taught to use getters/setters for every single property even if it was public (and actually I was told never to make any variable/property public). So, I may be starting off from a false assumption from the get go. It appears that people answering this question are maybe sayin g that you should have public properties and that those don't need getters and setters, which goes against what I was taught, and what I was talking about, although maybe that needs to be discussed as well. That's probably a good topic for a different question though...&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">58</field>
+	<field name="LastEditorUserId">202431</field>
+	<field name="LastEditorDisplayName">Gaius</field>
+	<field name="LastEditDate">2010-01-20T08:27:13.130</field>
+	<field name="LastActivityDate">2017-03-14T20:17:55.510</field>
+	<field name="Title">How would  you access Object properties from within an object method?</field>
+	<field name="Tags">&lt;java&gt;&lt;php&gt;&lt;oop&gt;&lt;theory&gt;</field>
+	<field name="AnswerCount">18</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">5</field>
+</doc>
+
+<doc>
+	<field name="Id">127</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">126</field>
+	<field name="CreationDate">2008-08-01T16:13:47.600</field>
+	<field name="Score">56</field>
+	<field name="Body">&lt;p&gt;This has religious war potential, but it seems to me that if you're using a getter/setter, you should use it internally as well - using both will lead to maintenance problems down the road (e.g. somebody adds code to a setter that &lt;em&gt;needs&lt;/em&gt; to run every time that property  is set, and the property is being set internally w/o that setter being called).&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">35</field>
+	<field name="LastEditorUserId">35</field>
+	<field name="LastEditorDisplayName">Greg</field>
+	<field name="LastEditDate">2008-08-01T16:32:17.110</field>
+	<field name="LastActivityDate">2008-08-01T16:32:17.110</field>
+	<field name="CommentCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">128</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">126</field>
+	<field name="CreationDate">2008-08-01T16:19:04.283</field>
+	<field name="Score">16</field>
+	<field name="Body">&lt;p&gt;It depends on how the property is used. For example, say you have a student object that has a name property. You could use your Get method to pull the name from the database, if it hasn't been retrieved already. This way you are reducing unnecessary calls to the database.&lt;/p&gt;
+
+&lt;p&gt;Now let's say you have a private integer counter in your object that counts the number of times the name has been called. You may want to not use the Get method from inside the object because it would produce an invalid count.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">26</field>
+	<field name="LastActivityDate">2008-08-01T16:19:04.283</field>
+	<field name="CommentCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">129</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T16:22:42.420</field>
+	<field name="Score">74</field>
+	<field name="ViewCount">92501</field>
+	<field name="Body">&lt;p&gt;I've been banging my head against &lt;code&gt;SQL Server 2005&lt;/code&gt; trying to get a lot of data out.  I've been given a database with nearly 300 tables in it and I need to turn this into a MySQL database.  My first call was to use bcp but unfortunately it doesn't produce valid C SV - strings aren't encapsulated, so you can't deal with any row that has a string with a comma in it (or whatever you use as a delimiter) and I would still have to hand write all of the create table statements, as obviously CSV doesn't tell you anything about the data types.&lt;/p&gt;
+
+&lt;p&gt;What would be better is if there was some tool that could connect to both SQL Server and MySQL,  then do a copy. You lose views, stored procedures, trigger, etc, but it isn't hard to copy a table that only uses base types from one DB to another... is it?&lt;/p&gt;
+
+&lt;p&gt;Does anybody know of such a tool?  I don't mind how many assumptions it makes or what simplifications occur, as long as it supports integer, float, datetime and string. I have to do a lot of pruning, normalising, et c. anyway so I don't care about keeping keys, relationships or anything like that, but I need the initial set of data in fast!&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">48</field>
+	<field name="LastEditorUserId">4800955</field>
+	<field name="LastEditorDisplayName">Mark Harrison</field>
+	<field name="LastEditDate">2015-10-10T10:25:12.217</field>
+	<field name="LastActivityDate">2015-10-10T10:25:12.217</field>
+	<field name="Title">How to export data from SQL Server 2005 to MySQL</field>
+	<field name="Tags">&lt;mysql&gt;&lt;sql-server&gt; &lt;csv&gt;&lt;sql-server-2005&gt;&lt;bcp&gt;</field>
+	<field name="AnswerCount">5</field>
+	<field name="CommentCount">5</field>
+	<field name="FavoriteCount">22</field>
+</doc>
+
+<doc>
+	<field name="Id">133</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">123</field>
+	<field name="CreationDate">2008-08-01T16:31:43.430</field>
+	<field name="Score">3</field>
+	<field name="Body">&lt;p&gt;This may be too basic or limited of a solution, but couldn't you do a &lt;a href="http://java.sun.com/j2se/7/docs/api/java/lang/String.html#split(java.lang.String)" rel="nofollow noreferrer"&gt;&lt;code&gt;String.split()&lt;/code&gt;&lt;/a&gt; on each line of the file,  remembering the result array of the first line to generate the XML, and just spit each line's array data out with the proper XML elements padding each iteration of a loop?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">59</field>
+	<field name="LastEditorUserId">1102512</field>
+	<field name="LastEditDate">2013-11-26T00:02:16.310</field>
+	<field name="LastActivityDate">2013-11-26T00:02:16.310</field>
+	<field name="CommentCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">134</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">206</field>
+	<field name="CreationDate">2008-08-01T16:33:38.183</field>
+	<field name="Score">22</field>
+	<field name="ViewCount">700</field>
+	<field name="Body">&lt;p&gt;I have a pretty standard table set-up in a current application using the &lt;a href="http://en.wikipedia.org/wiki/.NET_Framework" rel="noreferrer"&gt;.NET&lt;/a&gt; &lt;a href="http://en.wikipedia.org/wiki/XML_Schema_%28W3C%29" rel="noreferrer"&gt;XSD&lt;/a&gt; &lt;code&gt;DataSet&lt;/code&gt; and &lt;code&gt;TableAdapter&lt;/code&gt; features. My &lt;code&gt;contracts&lt;/code&gt; table consists of some standard contract information, with a column for the &lt;code&gt;primary department&lt;/code&gt;. This column is a &lt;a href="http://en.wikipedia.org/wiki/Foreign_key" rel="noreferrer"&gt;foreign k ey&lt;/a&gt; to my &lt;code&gt;Departments&lt;/code&gt; table, where I store the basic &lt;code&gt;department name&lt;/code&gt;, &lt;code&gt;id&lt;/code&gt;, &lt;code&gt;notes&lt;/code&gt;. This is all setup and functioning in my &lt;a href="http://en.wikipedia.org/wiki/Microsoft_SQL_Server" rel="noreferrer"&gt;SQL Server&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When I use the XSD  tool, I can drag both tables in at once and it auto detects/creates the foreign key I have between these two tables. This works great when I'm on my main page and am viewing contract data.&lt;/p&gt;
+
+&lt;p&gt;However, when I go to my administrative page to modify the department data. I typically do something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Dim dtDepartment As New Depar tmentDataTable()
+Dim taDepartment As New DepartmentTableAdapter()
+
+taDepartment.Fill(dtDepartment)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, at this point an exception is thrown saying to the effect that there is a foreign key reference broken here, I'm guessing since I don't have the &lt;code&gt;Contract&lt;/code&gt; &lt;code&gt;DataTable&lt;/code&gt; filled. &lt;/p&gt;
+
+&lt;p&gt;How can I fix this problem? I know I can simply remove the foreign key from the XSD to make things work fine, but having the additional integrity check there and having the XSD schema match the SQL schema in the database is nice.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">71</field>
+	<field name="LastEditorUserId">3787519</field>
+	<field name="LastEditorDisplayName">Jim Anderson</field>
+	<field name="LastEditDate">2015-12-29T06:30:26.233</field>
+	<field name="LastActivityDate">2016-03-23T12:07:52.153</field>
+	<field name="Title">XSD DataSets and ignoring foreign keys</field>
+	<field name="Tags">&lt;.net&gt;&lt;database&gt;&lt;xsd&gt;</field>
+	<field name="AnswerCount">1</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">135</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">129</field>
+	<field name="CreationDate">2008-08-01T16:36:42.080</field>
+	<field name="Score">6</field>
+	<field name="Body">&lt;p&gt;Rolling your own PHP solution will certainly work though I'm not sure if there is a good way to automatically duplicate the schema from one DB to the other (maybe this was your question).&lt;/p&gt;
+
+&lt;p&gt;If you are just copying data, and/or you need custom code anyway to conver t between modified schemas between the two DB's, I would recommend using PHP 5.2+ and the PDO libraries.  You'll be able to connect using PDO ODBC (and use MSSQL drivers).  I had a lot of problems getting large text fields and multi-byte characters from MSSQL into PHP using other libraries.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">72</field>
+	<field name="LastActivityDate">2008-08-01T16:36:42.080</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">139</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">126</field>
+	<field name="CreationDate">2008-08-01T16:43:30.880</field>
+	<field name="Score">11</field>
+	<field name="Body">&lt;blockquote&gt;
+  &lt;p&gt;Am I just going overboard here?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Perhaps ;)&lt;/p&gt;
+
+&lt;p&gt;Another approach would be to utilize a private/protected method to actually do the getting (caching/db/etc), and a public wrapper for it that  increments the count:&lt;/p&gt;
+
+&lt;p&gt;PHP:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public function getName() {
+    $this-&amp;gt;incrementNameCalled();
+    return $this-&amp;gt;_getName();
+}
+
+protected function _getName() {
+    return $this-&amp;gt;name;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and then from within the object itself:&lt;/p&gt;
+
+&lt;p&gt;PHP:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$name = $this-&amp;gt;_getName();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This way you can still use that first argument for something else (like sending a flag for whether or not to used cached data here perhaps).&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">72</field>
+	<field name="LastActivityDate">2008-08-01T16:43:30.880</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">141</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">129</field>
+	<field name="CreationDate">2008-08-01T16:47:54.927</field>
+	<field name="Score">4</field>
+	<field name="Body">&lt;p&gt;Another tool to try would be the SQLMaestro suite - &lt;a href="http://www.sqlmaestro.com" rel="nofollow noreferrer"&gt;http://www.sqlmaestro.com&lt;/a&gt; It is a little tricky nailing down the precise tool, but they have a variety of tools, both free and for purchase  that handle a wide variety of tasks for multiple database platforms. I'd suggest trying the Data Wizard tool first for MySQL, since I believe that will have the proper "import" tool you need.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">71</field>
+	<field name="LastActivityDate">2008-08-01T16:47:54.927</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">142</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">126</field>
+	<field name="CreationDate">2008-08-01T16:56:55.830</field>
+	<field name="Score">5</field>
+	<field name="Body">&lt;p&gt;Well, it seems with C# 3.0 properties' default implementation, the decision is taken for you; you HAVE to set the property using the (possibly private) property setter.&lt;/p&gt;
+
+&lt;p&gt;I personally only use the private member-behind when not doing so would cause the object to fall in an less than desirable state, such as when initializing or when caching/lazy loading is involved.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">42</field>
+	<field name="LastActivityDate">2008-08-01T16:56:55.830</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">143</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">126</field>
+	<field name="CreationDate">2008-08-01T17:01:27.240</field>
+	<field name="Score">4</field>
+	<field name="Body">&lt;p&gt;As stated in some of the comments: Sometimes you should, sometimes you shouldn't. The great part about private variables is that you are able to see all the places they are used when you change something. If your getter/setter does something you need, use it. If it doesn't matter you decide.&lt;/p&gt;
+
+&lt;p&gt;The opposite case could be made that if you use the getter/setter and somebody changes the getter/setter they have to analyze all the places the getter and setter is used internally to see if it messes something up.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">86</field>
+	<field name="LastActivityDate">2008-08-01T17:01:27.240</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">145</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T17:13:08.933</field>
+	<field name="Score">38</field>
+	<field name="ViewCount">2457</field>
+	<field name="Body">&lt;p&gt;Does anyone know of a good way to compress or decompress files and folders in C# quickly? Handling large files might be necessary.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">87</field>
+	<field name="LastEditorUserId">481248</field>
+	<field name="LastEditorDisplayName">kevin d</field>
+	<field name="LastEditDate">2017-01-16T03:22:50.537</field>
+	<field name="LastActivityDate">2017-01-16T03:22:50.537</field>
+	<field name="Title">Compressing / Decompressing Folders &amp; Files</field>
+	<field name="Tags">&lt;c#&gt;&lt;.net&gt;&lt;compression&gt;&lt;decompression&gt;</field>
+	<field name="AnswerCount">8</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">1</field>
+	<field name="CommunityOwnedDate">2014-04-04T13:02:49.830</field>
+</doc>
+
+<doc>
+	<field name="Id">146</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">152</field>
+	<field name="CreationDate">2008-08-01T17:14:58.337</field>
+	<field name="Score">59</field>
+	<field name="ViewCount">15191</field>
+	<field name="Body">&lt;p&gt;I have a website that plays mp3s in a flash player. If a user clicks 'play' the flash player automatically downloads an mp3 and starts playing it. &lt;/p&gt;
+
+&lt;p&gt;Is there an easy way to track how many times a particular song clip (or any binary file ) has been downloaded?&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Is the play link a link to the actual
+  mp3 file or to some javascript code
+  that pops up a player?&lt;/p&gt;
+  
+  &lt;p&gt;If the latter, you can easily add your
+  own logging code in there to track the
+  number of hits to it.&lt;/p&gt;
+  
+  &lt;p&gt;If the former, you'l l need something
+  that can track the web server log
+  itself and make that distinction. My
+  hosting plan comes with webalizer,
+  which does this nicely.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It's javascript code, so that answers that. &lt;/p&gt;
+
+&lt;p&gt;However, it would be nice to know how to track downloads using the other method (without switching hosts) .&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">30</field>
+	<field name="LastEditorUserId">3001352</field>
+	<field name="LastEditDate">2016-04-22T05:33:06.060</field>
+	<field name="LastActivityDate">2016-06-09T09:38:50.137</field>
+	<field name="Title">How do I track file downloads</field>
+	<field name="Tags">&lt;php&gt;&lt;apache&gt;&lt;logging&gt;&lt;download&gt;&lt;analytics&gt;</field>
+	<field name="AnswerCount">8</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">8</field>
+</doc>
+
+<doc>
+	<field name="Id">147</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">42</field>
+	<field name="CreationDate">2008-08-01T17:23:43.777</field>
+	<field name="Score">27</field>
+	<field name="Body">&lt;p&gt;The &lt;em&gt;hook&lt;/em&gt; and &lt;em&gt;listener&lt;/em&gt; method is the most commonly used, but there are other things you can do.  Depending on the size of your app, and who your going to allow see the code (is this going to be a FOSS script, or something in house) will influence greatly how you want to allow plugins.&lt;/p&gt;
+
+&lt;p&gt;kdeloach has a nice example, but his implementation and hook function is a little unsafe.  I would ask for you to give more information of the nature of php app your writing, And how you see plugins fitting in.  &lt;/p&gt;
+
+&lt;p&gt;+1 to kdeloach from me.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">146637</field>
+	<field name="OwnerDisplayName">dubayou</field>
+	<field name="LastActivityDate">2008-08-01T17:23:43.777</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">148</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">146</field>
+	<field name="CreationDate">2008-08-01T17:24:24.290</field>
+	<field name="Score">5</field>
+	<field name="Body">&lt;p&gt;Is the play link a link to the actual mp3 file or to some javascript code that pops up a player? &lt;/p&gt;
+
+&lt;p&gt;If the latter, you can easily add your own logging code in there to track the number of hits to it.&lt;/p&gt;
+
+&lt;p&gt;If the former, you'll need something that can track the web server log itself and make that distinction. My hosting plan comes with webalizer, which does this nicely.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">71</field>
+	<field name="LastActivityDate">2008-08-01T17:24:24.290</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">149</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">145</field>
+	<field name="CreationDate">2008-08-01T17:28:24.253</field>
+	<field name="Score">9</field>
+	<field name="Body">&lt;p&gt;As of .Net 1.1 the only available method is reaching into the java libraries.&lt;br&gt;
+&lt;a href="http://msdn.microsoft.com/en-ca/magazine/cc164129.aspx" rel="noreferrer"&gt;Using the Zip Classes in the J# Class Libraries to Compress Files and Data with C#&lt;/a&gt;&lt;br&gt;
+Not sure if this has changed in recent versions.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">80</field>
+	<field name="LastActivityDate">2008-08-01T17:28:24.253</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">151</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">145</field>
+	<field name="CreationDate">2008-08-01T17:30:56.277</field>
+	<field name="Score">19</field>
+	<field name="Body">&lt;p&gt;I've always used the SharpZip Library.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://sharpdevelop.net/OpenSource/SharpZipLib/Download.aspx" rel="noreferrer"&gt;Here's a link&lt;/a&gt;&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">44</field>
+	<field name="LastEditorUserId">1525840</field>
+	<field name="LastEditorDisplayName">Jeff Atwood</field>
+	<field name="LastEditDate">2012-12-04T20:29:28.010</field>
+	<field name="LastActivityDate">2012-12-04T20:29:28.010</field>
+	<field name="CommentCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">152</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">146</field>
+	<field name="CreationDate">2008-08-01T17:33:58.750</field>
+	<field name="Score">35</field>
+	<field name="Body">&lt;p&gt;The funny thing is i wrote a php media gallery for all my music 2 days ago. I had a similar problem.  Im using &lt;a href="http://musicplayer.sourceforge.net/" rel="noreferrer"&gt;http://musicplayer.sourceforge.net/&lt;/a&gt; for the player. and the playlis are built v ia php.  all music request go there a script called xfer.php?file=WHATEVER&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$filename = base64_url_decode($_REQUEST['file']);
+header("Cache-Control: public");
+header("Content-Description: File Transfer");
+header('Content-disposition: attachment; filename='.basename($filename));
+header("Content-Transfer-Encoding: binar y");
+header('Content-Length: '. filesize($filename));
+
+//  Put either file counting code here. either a db or static files
+
+//
+
+readfile($filename);  //and spit the user the file
+
+
+function base64_url_decode($input) {
+    return base64_decode(strtr($input, '-_,', '+/='));
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And when you call files u se something like &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function base64_url_encode($input) {
+     return strtr(base64_encode($input), '+/=', '-_,');
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href="http://us.php.net/manual/en/function.base64-encode.php" rel="noreferrer"&gt;http://us.php.net/manual/en/function.base64-encode.php&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are using some javascript or a flash player (JW player for example) that requires the actual link to be an mp3 file or whatever, you can append the text "&amp;amp;type=.mp3" so the final linke becomes something like "www.example.com/xfer.php?file=34842ffjfjxfh&amp;amp;type=.mp3". That way it looks like it ends with an mp3 extension without affecting the file l ink.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">146637</field>
+	<field name="OwnerDisplayName">dubayou</field>
+	<field name="LastEditorUserId">30</field>
+	<field name="LastEditorDisplayName">Grant</field>
+	<field name="LastEditDate">2008-08-10T12:16:40.330</field>
+	<field name="LastActivityDate">2008-08-10T12:16:40.330</field>
+	<field name="CommentCount">4</field>
+</doc>
+
+<doc>
+	<field name="Id">153</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">146</field>
+	<field name="CreationDate">2008-08-01T17:42:04.723</field>
+	<field name="Score">9</field>
+	<field name="Body">&lt;p&gt;You could even set up an Apache .htaccess directive that converts *.mp3 requests into the querystring dubayou is working with.  It might be an elegant way to keep the direct request and still be able to slipstream log function into the response.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">59</field>
+	<field name="LastActivityDate">2008-08-01T17:42:04.723</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">154</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">85</field>
+	<field name="CreationDate">2008-08-01T17:45:06.513</field>
+	<field name="Score">62</field>
+	<field name="Body">&lt;p&gt;Well, what is the nature of the flat databases.  Are they large or small.  Is it simple arrays with arrays in them?  if its something simple say userprofiles built as such:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$user = array("name" =&amp;gt; "dubayou", 
+               "age" =&amp;gt; 20,
+              "websites" =&amp;gt; array("dubayou.com","willwharton.com","codecream.com"),
+              "and_one" =&amp;gt; "more");
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and to save or update the &lt;em&gt;db record&lt;/em&gt; for that user.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ dir = "../userdata/";  //make sure to put it bellow what the server can reach.
+file_put_contents($dir.$user['name'],serialize($user));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and to load the &lt;em&gt;record&lt;/em&gt; for the user&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function &amp;amp;get_user($name){
+    return unserialize(file_get_contents("../userdata/". $name));
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;but again this implementation will vary on the application and nature of the database you need.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">146637</field>
+	<field name="OwnerDisplayName">dubayou</field>
+	<field name="LastEditorUserId">967315</field>
+	<field name="LastEditDate">2012-10-14T12:26:34.197</field>
+	<field name="LastActivityDate">2012-10-14T12:26:34.197</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">155</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">108</field>
+	<field name="CreationDate">2008-08-01T17:47:54.727</field>
+	<field name="Score">6</field>
+	<field name="Body">&lt;p&gt;I used to have lots of Explorer crashes (on 32-bit) caused by Tortoise. They seem to have gone away since I used the Include/Exclude path settings in the "Icon Overlays" configuration of TSVN. Constraining icon overlays to specific directories where I keep my source made this muc h more stable.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">9</field>
+	<field name="LastActivityDate">2008-08-01T17:47:54.727</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">158</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">146</field>
+	<field name="CreationDate">2008-08-01T17:51:55.407</field>
+	<field name="Score">25</field>
+	<field name="Body">&lt;p&gt;Use your httpd log files. Install &lt;a href="http://awstats.sourceforge.net/" rel="noreferrer"&gt;http://awstats.sourceforge.net/&lt;/a&gt;&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">70</field>
+	<field name="LastEditorDisplayName">user212218</field>
+	<field name="LastEditDate">2012-05-07T01:43:59.980</field>
+	<field name="LastActivityDate">201 2-05-07T01:43:59.980</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">159</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">104</field>
+	<field name="CreationDate">2008-08-01T17:52:46.293</field>
+	<field name="Score">28</field>
+	<field name="Body">&lt;p&gt;Strictly speaking, a memory leak is consuming memory that is "no longer used" by the program.&lt;/p&gt;
+
+&lt;p&gt;"No longer used" has more than one meaning, it could mean "no more reference to it", that is, totally unrecoverable, or it could mean, re ferenced, recoverable, unused but the program keeps the references anyway. Only the later applies to .Net for &lt;strong&gt;perfectly managed objects&lt;/strong&gt;. However, not all classes are perfect and at some point an underlying unmanaged implementation could leak resources permanently for that process.&lt;/p&gt;
+
+&lt;p&gt;In all cases, the application consumes more memory than strict ly needed. The sides effects, depending on the ammount leaked, could go from none, to slowdown caused by excessive collection, to a series of memory exceptions and finally a fatal error followed by forced process termination.&lt;/p&gt;
+
+&lt;p&gt;You know an application has a memory problem when monitoring shows that more and more memory is allocated to your process &lt;strong&gt;after each  garbage collection cycle&lt;/strong&gt;. In such case, you are either keeping too much in memory, or some underlying unmanaged implementation is leaking.&lt;/p&gt;
+
+&lt;p&gt;For most leaks, resources are recovered when the process is terminated, however some resources are not always recovered in some precise cases, GDI cursor handles are notorious for that. Of course, if you have an interpr ocess communication mechanism, memory allocated in the other process would not be freed until that process frees it or terminates.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">42</field>
+	<field name="LastActivityDate">2008-08-01T17:52:46.293</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">160</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">129</field>
+	<field name="CreationDate">2008-08-01T17:54:08.163</field>
+	<field name="Score">56</field>
+	<field name="Body">&lt;p&gt;The best way that I have found is the &lt;a href="http://www.mysql.com/products/tools/migration-toolkit/" rel="noreferrer"&gt;MySQL Migration Toolkit&lt;/a&gt; provided by MySQL.  I have used it successfully for some large migration projects.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">17</field>
+	<field name="LastActivityDate">2008-08-01T17:54:08.163</field>
+	<field name="CommentCount">4</field>
+</doc>
+
+<doc>
+	<field name="Id">161</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">104</field>
+	<field name="CreationDate">2008-08-01T17:57:14.117</field>
+	<field name="Score">14</field>
+	<field name="Body">&lt;p&gt;I would define memory leaks as an object not freeing up all the memory allocated after it has completed. I have found this can happen in your application if you are using Windows API and COM (i.e. unmanaged code that has a bug in it or is not being managed correctly), in the framework and  in third party components. I have also found not tiding up after using certain objects like pens can cause the issue.&lt;/p&gt;
+
+&lt;p&gt;I personally have suffered Out of Memory Exceptions which can be caused but are not exclusive to memory leaks in dot net applications. (OOM can also come from pinning see &lt;a href="https://blogs.msdn.com/yunjin/archive/2004/01/27/63642.aspx"  rel="noreferrer"&gt;Pinning Artical&lt;/a&gt;). If you are not getting OOM errors or need to confirm if it is a memory leak causing it then the only way is to profile your application.&lt;/p&gt;
+
+&lt;p&gt;I would also try and ensure the following:&lt;/p&gt;
+
+&lt;p&gt;a) Everything that implements Idisposable is disposed either using a finally block or the using statement t hese include brushes, pens etc.(some people argue to set everything to nothing in addition) &lt;/p&gt;
+
+&lt;p&gt;b)Anything that has a close method is closed again using finally or the using statement (although I have found using does not always close depending if you declared the object outside the using statement)&lt;/p&gt;
+
+&lt;p&gt;c)If you are using unmanaged code/windows API's  that these are dealt with correctly after. (some have clean up methods to release resources)&lt;/p&gt;
+
+&lt;p&gt;Hope this helps.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">33</field>
+	<field name="LastActivityDate">2008-08-01T17:57:14.117</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">163</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">170</field>
+	<field name="CreationDate">2008-08-01T18:00:13.830</field>
+	<field name="Score">78</field>
+	<field name="ViewCount">7470</field>
+	<field name="Body">&lt;p&gt;Stack Overflow has a subversion version number at the bottom:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;svn revision: 679&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I want to use such automatic versioning with my &lt;code&gt;.NET Web Site/Appli cation&lt;/code&gt;, Windows Forms, WPD projects/solutions.&lt;/p&gt;
+
+&lt;p&gt;How do I implement this?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">83</field>
+	<field name="LastEditorUserId">3787519</field>
+	<field name="LastEditorDisplayName">ChanChan</field>
+	<field name="LastEditDate">2015-12-29T06:27:21.560</field>
+	<field name="LastActivityDate">2015-12-29T06:29:47.283</field>
+	<field name="Title">How do I sync the SVN revision number with my ASP.NET web site?</field>
+	<field name="Tags">&lt;.net&gt;&lt;asp.net&gt;&lt;svn&gt;&lt;versioning&gt;</field>
+	<field name="AnswerCount">7</field>
+	<field name="CommentCount">3</field>
+	<field name="FavoriteCount">16</field>
+</doc>
+
+<doc>
+	<field name="Id">164</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">699</field>
+	<field name="CreationDate">2008-08-01T18:02:22.797</field>
+	<field name="Score">49</field>
+	<field name="ViewCount">160363</field>
+	<field name="Body">&lt;p&gt;We are using &lt;a href="http://en.wikipedia.org/wiki/Windows_Media_Video" rel="noreferrer"&gt;WMV&lt;/a&gt; videos on an internal site, and we are embedding them into web sites. Now, this works quite well on Internet Explorer, but not on Fir efox. I've found ways to make it work in Firefox, but then it stops working in Internet Explorer.&lt;/p&gt;
+
+&lt;p&gt;We do not want to use Silverlight just yet, especially since we cannot be sure that all clients will be running Windows XP with Windows Media Player installed. &lt;/p&gt;
+
+&lt;p&gt;Is there some sort of Universal Code that embeds WMP into both Internet Explorer and F irefox, or do we need to implement some user-agent-detection and deliver different HTML for different browsers?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">91</field>
+	<field name="LastEditorUserId">845306</field>
+	<field name="LastEditorDisplayName">Adam Mitz</field>
+	<field name="LastEditDate">2011-12-22T20:51:48.020</field>
+	<field name="LastActivityDate">2014-01-16T20:24:41.080</field>
+	<field name="Title">Embedding Windows Media Player for all browsers</field>
+	<field name="Tags">&lt;windows&gt;&lt;embed&gt;&lt;media&gt;</field>
+	<field name="AnswerCount">9</field>
+	<field name="CommentCount">1</field>
+	<field name="FavoriteCount">12</field>
+</doc>
+
+<doc>
+	<field name="Id">165</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">145</field>
+	<field name="CreationDate">2008-08-01T18:04:25.023</field>
+	<field name="Score">5</field>
+	<field name="Body">&lt;p&gt;You can use a &lt;a href="http://sharpdevelop.net/OpenSource/SharpZipLib/" rel="nofollow noreferrer"&gt;3rd-party library such as SharpZip&lt;/a&gt; as Tom pointed out.&lt;/p&gt;
+
+&lt;p&gt;Another way (without going 3rd-party) is to use the Windows Shell API. Yo u'll need to set a reference to the Microsoft Shell Controls and Automation COM library in your C# project. Gerald Gibson has an example at:&lt;/p&gt;
+
+&lt;p&gt;&lt;s&gt;&lt;a href="http://geraldgibson.net/dnn/Home/CZipFileCompression/tabid/148/Default.aspx" rel="nofollow noreferrer"&gt;http://geraldgibson.net/dnn/Home/CZipFileCompression/tabid/148/Default.aspx&lt;/a&gt; &lt;/s&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://web.archive.org/web/20130724085455/http://geraldgibson.net/dnn/Home/CZipFileCompression/tabid/148/Default.aspx" rel="nofollow noreferrer"&gt;Internet Archive's copy of the dead page&lt;/a&gt;&lt;/p&gt;
+</field>
+	<field name="OwnerDisplayName">user2189331</field>
+	<field name="LastEditorUserId">1324</field>
+	<field name="LastEditDate">2016-01-20T15:31:50.297</field>
+	<field name="LastActivityDate">2016-01-20T15:31:50.297</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">166</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">163</field>
+	<field name="CreationDate">2008-08-01T18:08:16.590</field>
+	<field name="Score">22</field>
+	<field name="Body">&lt;p&gt;You can do it by adding the following anywhere in your code &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$Id:$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So for example @Jeff did:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id="svnrevision"&amp;gt;svn revision: $Id: $&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and when checked in the server replaced $Id:$ with the current revision number.  I also &lt;a href="http://www.compuphase.com/svnrev.htm" rel="nofollow noreferrer"&gt;found this reference&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There is also &lt;strong&gt;$Date:$&lt;/strong&gt;, &lt;strong&gt;$Rev:$&lt;/strong&gt;, &lt;strong&gt;$Revision:$&lt;/strong&gt;&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">17</field>
+	<field name="LastEditorUserId">3787519</field>
+	<field name="LastEditDate">2015-12-29T06:29:47.283</field>
+	<field name="LastActivityDate">2015-12-29T06:29:47.283</field>
+	<field name="CommentCount">7</field>
+</doc>
+
+<doc>
+	<field name="Id">167</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">164</field>
+	<field name="CreationDate">2008-08-01T18:08:53.080</field>
+	<field name="Score">4</field>
+	<field name="Body">&lt;p&gt;You could use conditional comments to get IE and Firefox to do different things&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;![if !IE]&amp;gt;
+&amp;lt;p&amp;gt; Firefox only code&amp;lt;/p&amp;gt;
+&amp;lt;![endif]&amp;gt;
+
+&amp;lt;!--[if IE]&amp;gt;
+&amp;lt;p&amp;gt;Internet Explorer only code&amp;lt;/p&amp;gt;
+&amp;lt;![endif]--&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The browsers themselves will ignore code that isn't meant for them to read.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">30</field>
+	<field name="LastEditorUserId">30</field>
+	<field name="LastEditorDisplayName">Grant</field>
+	<field name="LastEditDate">2008-08-01T18:14:56.093</field>
+	<field name="LastActivityDate">2008-08-01T18:14:56.093</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">169</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">126</field>
+	<field name="CreationDate">2008-08-01T18:23:59.040</field>
+	<field name="Score">41</field>
+	<field name="Body">&lt;p&gt;Personally, I feel like it's important to remain consistent.  If you have getters and setters, use them.  The only time I would access a field directly is when the accessor has a lot of overhead.  It may feel like you're bloating your code unnecessarily, but it can certainly save a whole  lot of headache in the future.  The classic example:&lt;/p&gt;
+
+&lt;p&gt;Later on, you may desire to change the way that field works.  Maybe it should be calculated on-the-fly or maybe you would like to use a different type for the backing store.  If you are accessing properties directly, a change like that can break an awful lot of code in one swell foop.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">93</field>
+	<field name="LastActivityDate">2008-08-01T18:23:59.040</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">170</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">163</field>
+	<field name="CreationDate">2008-08-01T18:24:30.550</field>
+	<field name="Score">27</field>
+	<field name="Body">&lt;p&gt;Looks like Jeff is using &lt;a href="http://confluence.public.thoughtworks.org/display/CCNET/What+is+CruiseControl.NET" rel="nofollow noreferrer"&gt;CruiseControl.NET&lt;/a&gt; based on some leafing through the podcast transcripts.  This seems to have automated deploym ent capabilities from source control to production. Might this be where the insertion is happening?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">59</field>
+	<field name="LastEditorUserId">3787519</field>
+	<field name="LastEditDate">2015-12-29T06:27:45.697</field>
+	<field name="LastActivityDate">2015-12-29T06:27:45.697</field>
+	<field name="CommentCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">173</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">516</field>
+	<field name="CreationDate">2008-08-01T18:33:08.333</field>
+	<field name="Score">267</field>
+	<field name="ViewCount">74230</field>
+	<field name="Body">&lt;p&gt;I want to get my databases under version control.  Does anyone have any advice or recommended articles to get me started?&lt;/p&gt;
+
+&lt;p&gt;I'll always want to have at least &lt;em&gt;some&lt;/em&gt; data in there (as &lt;a href="https://stackover flow.com/users/80/alumb"&gt;alumb&lt;/a&gt; mentions: user types and administrators).  I'll also often want a large collection of generated test data for performance measurement.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">83</field>
+	<field name="LastEditorUserId">-1</field>
+	<field name="LastEditorDisplayName">user5857081</field>
+	<field name="LastEditDate">2017-05-23T10:31:09.620</field>
+	<field name="LastActivityDate">2017-04-04T17:55:40.307</field>
+	<field name="Title">Versioning SQL Server database</field>
+	<field name="Tags">&lt;sql-server&gt;&lt;database&gt;&lt;svn&gt;&lt;version-control&gt;</field>
+	<field name="AnswerCount">29</field>
+	<field name="CommentCount">6</field>
+	<field name="FavoriteCount">192</field>
+</doc>
+
+<doc>
+	<field name="Id">174</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T18:33:48.287</field>
+	<field name="Score">59</field>
+	<field name="ViewCount">12696</field>
+	<field name="Body">&lt;p&gt;I want to print HTML from a C# web service.  The Web Browser control is overkill, and does not function well in a service environment, nor does it function well on a system with very tight security constraints.  Is there any sort of free &lt;code&gt;.NET&lt;/code&gt; library that will support  the printing of a basic HTML page?  Here is the code I have so far, which does not run properly.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public void PrintThing(string document)
+{
+    if (Thread.CurrentThread.GetApartmentState() != ApartmentState.STA)
+    {
+        Thread thread =
+            new Thread((ThreadStart) delegate { PrintDocument(document); });
+        thread.S etApartmentState(ApartmentState.STA);
+        thread.Start();
+    }
+    else
+    {
+        PrintDocument(document);
+    }
+}
+
+protected void PrintDocument(string document)
+{
+    WebBrowser browser = new WebBrowser();
+    browser.DocumentText = document;
+    while (browser.ReadyState != WebBrowserReadyState.Complete)
+    {
+        Applicatio n.DoEvents();
+    }
+    browser.Print();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This works fine when called from UI-type threads, but nothing happens when called from a service-type thread.  Changing &lt;code&gt;Print()&lt;/code&gt; to &lt;code&gt;ShowPrintPreviewDialog()&lt;/code&gt; yields the following IE script error:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;E rror: 'dialogArguments.___IE_PrintType' is null or not an object&lt;br /&gt;
+  URL: res://ieframe.dll/preview.dlg&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And a small empty print preview dialog appears.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">96</field>
+	<field name="OwnerDisplayName">Chris</field>
+	<field name="LastEditorUserId">96</field>
+	<field name="LastEditorDisplayName">Chris Marasti-Georg</field>
+	<field name="LastEditDate">2016-03-11T01:56:33.330</field>
+	<field name="LastActivityDate">20 16-03-11T01:56:33.330</field>
+	<field name="Title">How do I print an HTML document from a web service?</field>
+	<field name="Tags">&lt;c#&gt;&lt;html&gt;&lt;web-services&gt;&lt;printing&gt;</field>
+	<field name="AnswerCount">6</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">6</field>
+</doc>
+
+<doc>
+	<field name="Id">175</field>
+	<field name="PostTypeId">1</field>
+	<field name="CreationDate">2008-08-01T18:36:14.070</field>
+	<field name="Score">35</field>
+	<field name="ViewCount">6455</field>
+	<field name="Body">&lt;p&gt;I want to be able to display a normal YouTube video with overlaid annotations, consisting of coloured rectangles for each frame. The only requirement is that this should be done programmatically. YouTube has annotations now, but require you to use their front end to create them by hand.  I want to be able to generate them. What's the best way of doing this?&lt;/p&gt;
+
+&lt;p&gt;Some ideas:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+  &lt;li&gt;Build your own Flash player (ew?)&lt;/li&gt;
+  &lt;li&gt;Somehow draw over the YouTube Flash player. Will this work?&lt;/li&gt;
+  &lt;li&gt;Reverse engineer &amp;amp; hijack YouTube's annotation system. Either  messing with the local files or redirecting its attempt to download
+  the annotations. (using Greasemonkey? Firefox plugin?)&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Idea that doesn't count: &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;download the video&lt;/p&gt;
+&lt;/blockquote&gt;
+</field>
+	<field name="OwnerUserId">2089740</field>
+	<field name="LastEditorUserId">3155639</field>
+	<field name="LastEditDate"> 2016-12-20T19:28:24.513</field>
+	<field name="LastActivityDate">2016-12-20T19:28:24.513</field>
+	<field name="Title">Annotating YouTube videos programmatically</field>
+	<field name="Tags">&lt;youtube&gt;&lt;reverse-engineering&gt;</field>
+	<field name="AnswerCount">3</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">1</field>
+</doc>
+
+<doc>
+	<field name="Id">176</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">207</field>
+	<field name="CreationDate">2008-08-01T18:37:40.150</field>
+	<field name="Score">87</field>
+	<field name="ViewCount">75634</field>
+	<field name="Body">&lt;p&gt;On one Linux Server running Apache and PHP 5, we got multiple Virtual Hosts with separate logfiles and everything. The only thing we cannot seem to separate between virtual hosts is the php &lt;code&gt;error_log&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;Overridi ng this setting in the &lt;code&gt;&amp;lt;Location&amp;gt;&lt;/code&gt; of the &lt;code&gt;httpd.conf&lt;/code&gt; does not seem to do anything.&lt;/p&gt;
+
+&lt;p&gt;Did I overlook something? Is there a way to have separate php &lt;code&gt;error_logs&lt;/code&gt; for each Virtual Host?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">91</field>
+	<field name="LastEditorUserId">1202487</field>
+	<field name="LastEditDate">2016-04-23T17:30:59.900</field>
+	<field name="LastActivityDate">2016-12-20T05:42:07.733</field>
+	<field name="Title">error_log per Virtual Host?</field>
+	<field name="Tags">&lt;linux&gt;&lt;apache&gt;&lt;virtualhost&gt;</field>
+	<field name="AnswerCount">10</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">18</field>
+</doc>
+
+<doc>
+	<field name="Id">180</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">539</field>
+	<field name="CreationDate">2008-08-01T18:42:19.343</field>
+	<field name="Score">60</field>
+	<field name="ViewCount">13450</field>
+	<field name="Body">&lt;p&gt;This is something I've pseudo-solved many times and never quite found a solution. That's stuck with me. The problem is to come up with a way to generate &lt;code&gt;N&lt;/code&gt; colors, that are as distinguishable as possible where &lt;code&gt;N&lt;/code&gt; is  a parameter.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">2089740</field>
+	<field name="LastEditorUserId">2922639</field>
+	<field name="LastEditDate">2015-12-26T08:31:02.497</field>
+	<field name="LastActivityDate">2016-04-30T11:29:24.137</field>
+	<field name="Title">Function for creating color wheels</field>
+	<field name="Tags">&lt;algorithm&gt;&lt;language-agnostic&gt;&lt;colors&gt;&lt;color-space&gt;</field>
+	<field name="AnswerCount">9</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">19</field>
+</doc>
+
+<doc>
+	<field name="Id">183</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">123</field>
+	<field name="CreationDate">2008-08-01T18:51:12.090</field>
+	<field name="Score">54</field>
+	<field name="Body">&lt;p&gt;Maybe this might help: &lt;a href="http://jsefa.sourceforge.net/quick-tutorial.html" rel="noreferrer"&gt;JSefa&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can read CSV file with this tool and serialize it to XML.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">86</field>
+	<field name="LastEditorUserId">395659</field>
+	<field name="LastEditDate">2013-02-07T10:36:04.283</field>
+	<field name="LastActivityDate">2013-02-07T10:36:04.283</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">190</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">123</field>
+	<field name="CreationDate">2008-08-01T19:21:57.517</field>
+	<field name="Score">11</field>
+	<field name="Body">&lt;p&gt;I don't understand why you would want to do this. It sounds almost like cargo cult coding.&lt;/p&gt;
+
+&lt;p&gt;Converting a CSV file to XML doesn't add any value. Your program is already reading the CSV file, so arguing that you need XML doesn't work.&lt;/p&gt;
+
+&lt;p&gt;O n the other hand, reading the CSV file, doing &lt;em&gt;something&lt;/em&gt; with the values, and then serializing to XML does make sense (well, as much as using XML can make sense... ;)) but you would supposedly already have a means of serializing to XML.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">55</field>
+	<field name="LastActivityDate">2008-08-01T19:21:57.517</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">192</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">258</field>
+	<field name="CreationDate">2008-08-01T19:23:13.117</field>
+	<field name="Score">45</field>
+	<field name="ViewCount">2264</field>
+	<field name="Body">&lt;p&gt;One of the fun parts of multi-cultural programming is number formats.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Americans use 10,000.50&lt;/li&gt;
+&lt;li&gt;Germans use 10.000,50&lt;/li&gt;
+&lt;li&gt;French use 10 000,50&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My first approach would be to take the string, parse it backwards, until I encounter a separator and use this as my decimal separator. There is an obvious flaw with that: 10.000 would be interpreted as 10.&lt;/p&gt;
+
+&lt;p&gt;Another approach: if the string contains 2 different non-numeric characters, use the last one as the decimal separator and discard the others. If I only ha ve one, check if it occurs more than once and discard it if it does. If it only appears once, check if it has 3 digits after it. If yes, discard it, otherwise use it as decimal separator.&lt;/p&gt;
+
+&lt;p&gt;The obvious "best solution" would be to detect the User's culture or Browser, but that does not work if you have a Frenchman using an en-US Windows/Browser.&lt;/p&gt;
+
+&lt;p&gt;Does the .net Framework contain some mythical black magic floating point parser that is better than &lt;code&gt;Double.(Try)Parse()&lt;/code&gt; in trying to auto-detect the number format?&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">91</field>
+	<field name="LastEditorUserId">1039608</field>
+	<field name="LastEditorDisplayName">Michael Stum</field>
+	<field name="LastEditDate">2012-05-04T09:26:51.287</field>
+	<field name="LastActivityDate">2012-05-04T09:26:51.287</field>
+	<field name="Title">Floating Point N umber parsing: Is there a Catch All algorithm?</field>
+	<field name="Tags">&lt;c#&gt;&lt;.net&gt;&lt;asp.net&gt;&lt;internationalization&gt;&lt;globalization&gt;</field>
+	<field name="AnswerCount">4</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">194</field>
+	<field name="PostTypeId">1</field>
+	<field name="AcceptedAnswerId">197</field>
+	<field name="CreationDate">2008-08-01T19:26:37.883</field>
+	<field name="Score">27</field>
+	<field name="ViewCount">3342</field>
+	<field name="Body">&lt;p&gt;Yes, I know.  The existence of a running copy of &lt;code&gt;SQL Server 6.5&lt;/code&gt; in 2008 is absurd.&lt;/p&gt;
+
+&lt;p&gt;That stipulated, what is the best way to migrate from &lt;code&gt;6.5&lt;/code&gt; to &lt;code&gt;2005&lt;/code&gt;?  Is there a ny direct path?  Most of the documentation I've found deals with upgrading &lt;code&gt;6.5&lt;/code&gt; to &lt;code&gt;7&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Should I forget about the native &lt;code&gt;SQL Server&lt;/code&gt; upgrade utilities, script out all of the objects and data, and try to recreate from scratch?&lt;/p&gt;
+
+&lt;p&gt;I was going to attempt the upgrade this weekend,  but server issues pushed it back till next.  So, any ideas would be welcomed during the course of the week.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Update.  This is how I ended up doing it:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Back up the database in question and Master on &lt;code&gt;6.5&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Execute &lt;code&gt;SQL Server 2000&lt;/code&gt;'s &lt; code&gt;instcat.sql&lt;/code&gt; against &lt;code&gt;6.5&lt;/code&gt;'s Master.  This allows &lt;code&gt;SQL Server 2000&lt;/code&gt;'s OLEDB provider to connect to &lt;code&gt;6.5&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;SQL Server 2000&lt;/code&gt;'s standalone &lt;code&gt;"Import and Export Data"&lt;/code&gt; to create a DTS package, using &lt;code&gt;OLEDB&lt;/code&gt; t o connect to 6.5.  This successfully copied all &lt;code&gt;6.5&lt;/code&gt;'s tables to a new &lt;code&gt;2005&lt;/code&gt; database (also using &lt;code&gt;OLEDB&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;6.5&lt;/code&gt;'s Enterprise Manager to script out all of the database's indexes and triggers to a .sql file.&lt;/li&gt;
+&lt;li&gt;Execute that .sql file against the new copy o f the database, in 2005's Management Studio.&lt;/li&gt;
+&lt;li&gt;Use 6.5's Enterprise Manager to script out all of the stored procedures.&lt;/li&gt;
+&lt;li&gt;Execute that &lt;code&gt;.sql&lt;/code&gt; file against the &lt;code&gt;2005&lt;/code&gt; database.  Several dozen sprocs had issues making them incompatible with &lt;code&gt;2005&lt;/code&gt;.  Mainly &lt;code&gt;non-ANSI joins&lt;/ code&gt; and &lt;code&gt;quoted identifier issues&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Corrected all of those issues and re-executed the &lt;code&gt;.sql&lt;/code&gt; file.&lt;/li&gt;
+&lt;li&gt;Recreated the &lt;code&gt;6.5&lt;/code&gt;'s logins in &lt;code&gt;2005&lt;/code&gt; and gave them appropriate permissions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There was a bit of rinse/repeat  when correcting the stored procedures (there were hundreds of them to correct), but the upgrade went great otherwise.&lt;/p&gt;
+
+&lt;p&gt;Being able to use Management Studio instead of &lt;code&gt;Query Analyzer&lt;/code&gt; and &lt;code&gt;Enterprise Manager 6.5&lt;/code&gt; is such an amazing difference.  A few report queries that took 20-30 seconds on the &lt;code&gt;6.5 database&lt;/cod e&gt; are now running in 1-2 seconds, without any modification, new indexes, or anything.  I didn't expect that kind of immediate improvement.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">60</field>
+	<field name="LastEditorUserId">165216</field>
+	<field name="LastEditorDisplayName">Nigel Campbell</field>
+	<field name="LastEditDate">2012-06-12T05:35:46.927</field>
+	<field name="LastActivityDate">2017-01-17T09:38:49.320</field>
+	<field name="Title">Upgrading SQL Server 6.5</field>
+	<field name="Tags">&lt;sql-server&gt;&lt;migration&gt;</field>
+	<field name="AnswerCount">4</field>
+	<field name="CommentCount">0</field>
+	<field name="FavoriteCount">2</field>
+</doc>
+
+<doc>
+	<field name="Id">195</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">173</field>
+	<field name="CreationDate">2008-08-01T19:28:25.447</field>
+	<field name="Score">35</field>
+	<field name="Body">&lt;p&gt;This is one of the "hard problems" surrounding development. As far as I know there are no perfect solutions. &lt;/p&gt;
+
+&lt;p&gt;If you only need to store the database structure and not the data you can export the database as SQL queries. (in Enterprise Manager: Right c lick on database -&gt; Generate SQL script. I recommend setting the "create one file per object" on the options tab) You can then commit these text files to svn and make use of svn's diff and logging functions. &lt;/p&gt;
+
+&lt;p&gt;I have this tied together with a Batch script that takes a couple parameters and sets up the database. I also added some additional queries that enter  default data like user types and the admin user. (If you want more info on this, post something and I can put the script somewhere accessible)&lt;/p&gt;
+
+&lt;p&gt;If you need to keep all of the data as well, I recommend keeping a back up of the database and using Redgate (&lt;a href="http://www.red-gate.com/" rel="noreferrer"&gt;http://www.red-gate.com/&lt;/a&gt;) produc ts to do the comparisons. They don't come cheap, but they are worth every penny.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">80</field>
+	<field name="LastActivityDate">2008-08-01T19:28:25.447</field>
+	<field name="CommentCount">3</field>
+</doc>
+
+<doc>
+	<field name="Id">197</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">194</field>
+	<field name="CreationDate">2008-08-01T19:34:49.067</field>
+	<field name="Score">7</field>
+	<field name="Body">&lt;p&gt;Hey, I'm still stuck in that camp too. The third party application we have to support is FINALLY going to 2K5, so we're almost out of the wood. But I feel your pain 8^D&lt;/p&gt;
+
+&lt;p&gt;That said, from everything I heard from our DBA, the key is to convert the database to 8.0 fo rmat first, and then go to 2005. I believe they used the built in migration/upgrade tools for this. There are some big steps between 6.5 and 8.0 that are better solved there than going from 6.5 to 2005 directly.&lt;/p&gt;
+
+&lt;p&gt;Your BIGGEST pain, if you didn't know already, is that DTS is gone in favor of SSIS. There is a shell type module that will run your existing DTS packages, but y ou're going to want to manually recreate them all in SSIS. Ease of this will depend on the complexity of the packages themselves, but I've done a few at work so far and they've been pretty smooth.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">71</field>
+	<field name="LastActivityDate">2008-08-01T19:34:49.067</field>
+	<field name="CommentCount">0</field>
+</doc>
+
+<doc>
+	<field name="Id">199</field>
+	<field name="PostTypeId">2</field>
+	<field name="ParentId">180</field>
+	<field name="CreationDate">2008-08-01T19:36:46.067</field>
+	<field name="Score">1</field>
+	<field name="Body">&lt;p&gt;I've read somewhere the human eye can't distinguish between less than 4 values apart. so This is something to keep in mind. The following algorithm does not compensate for this.&lt;/p&gt;
+
+&lt;p&gt;I'm not sure this is exactly what you want, but this is one way to randomly generate  non-repeating color values:&lt;/p&gt;
+
+&lt;p&gt;(beware, inconsistent pseudo-code ahead)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//colors entered as 0-255 [R, G, B]
+colors = []; //holds final colors to be used
+rand = new Random();
+
+//assumes n is less than 16,777,216
+randomGen(int n){
+   while (len(colors) &amp;lt; n){
+      //generate a random number between  0,255 for each color
+      newRed = rand.next(256);
+      newGreen = rand.next(256);
+      newBlue = rand.next(256);
+      temp = [newRed, newGreen, newBlue];
+      //only adds new colors to the array
+      if temp not in colors {
+         colors.append(temp);
+      }
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;One way you could optimize this for b etter visibility would be to compare the distance between each new color and all the colors in the array:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for item in color{
+   itemSq = (item[0]^2 + item[1]^2 + item[2]^2])^(.5);
+   tempSq = (temp[0]^2 + temp[1]^2 + temp[2]^2])^(.5);
+   dist = itemSq - tempSq;
+   dist = abs(dist);
+}
+//NUMBER can be your chosen distance apart.
+if  dist &amp;lt; NUMBER and temp not in colors {
+   colors.append(temp);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But this approach would significantly slow down your algorithm.&lt;/p&gt;
+
+&lt;p&gt;Another way would be to scrap the randomness and systematically go through every 4 values and add a color to an array in the above example.&lt;/p&gt;
+</field>
+	<field name="OwnerUserId">50</field>
+	<field name="LastActivityDate">2008-08-01T19:36:46.067</field>
+	<field name="CommentCount">0</field>
+</doc>
+</add>
