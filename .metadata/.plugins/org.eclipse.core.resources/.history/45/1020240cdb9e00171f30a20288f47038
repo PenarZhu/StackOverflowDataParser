@@ -1,0 +1,40 @@
+package StackOverflow.XMLParser.Posts.Writer;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class PostsDocManager {
+
+	static final String PREFIX = "PostDoc";
+	Map<String,Integer> docTable = null;
+	
+	PostsDocManager() {
+		docTable = new LinkedHashMap<String,Integer>();
+	}
+	
+	public void addDocument(String Id) {
+		docTable.put(Id, 0);
+	}
+	
+	public void addAnswer(String Id) {
+		Integer answerCount = docTable.get(parentId);
+		if(answerCount != null) {
+			answerCount++;
+			docTable.put(Id,answerCount);
+		}	
+	}
+	
+	private String getDynamicFieldName(String fieldName, String parentId) {
+		Integer answerCount = docTable.get(parentId);
+		if(answerCount == null) {
+			return null;
+		}
+		else {
+			return fieldName + answerCount.toString();
+		}
+	}
+	
+	private String getFileName(String Id) {
+		return PREFIX + Id;
+	}
+}

@@ -1,0 +1,24 @@
+package StackOverflow.XMLParser.Posts.Writer;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class PostsDocManager {
+
+	static final String PREFIX = "PostDoc";
+	Map<String,Integer> docTable = null;
+	
+	PostsDocManager() {
+		docTable = new LinkedHashMap<String,Integer>();
+	}
+	
+	private String getDynamicFieldName(String parentId) {
+		if(docTable.get(parentId) != null) {
+			
+		}
+	}
+	
+	private String getFileName(String Id) {
+		return PREFIX + Id;
+	}
+}

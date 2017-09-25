@@ -1,0 +1,5 @@
+package StackOverflow.XMLParser.Posts.Writer;
+
+public class PostsAnswerStaxWriterForSolr implements nodeGenerator {
+
+}

@@ -1,0 +1,15 @@
+package StackOverflow.XMLParser.Posts.Writer;
+
+import java.util.Map;
+
+import javax.xml.stream.XMLEventWriter;
+import javax.xml.stream.XMLStreamException;
+
+
+	public interface nodeGenerator {
+		
+		public abstract void createNode(XMLEventWriter eventWriter, String name, String value) throws XMLStreamException;
+		
+		public abstract void createNode(XMLEventWriter eventWriter, String name, String value, Map<String, String>attributes) throws XMLStreamException;
+
+	}

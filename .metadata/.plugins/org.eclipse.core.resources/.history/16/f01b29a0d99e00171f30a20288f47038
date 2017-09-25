@@ -1,0 +1,30 @@
+package StackOverflow.XMLParser.Posts.Writer;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class PostsDocManager {
+
+	static final String PREFIX = "PostDoc";
+	Map<String,Integer> docTable = null;
+	
+	PostsDocManager() {
+		docTable = new LinkedHashMap<String,Integer>();
+	}
+	
+
+	
+	private String getDynamicFieldName(String field, String parentId) {
+		Integer answerCount = docTable.get(parentId);
+		if(answerCount == null) {
+			return null;
+		}
+		else {
+			return answerCount.toString();
+		}
+	}
+	
+	private String getFileName(String Id) {
+		return PREFIX + Id;
+	}
+}
