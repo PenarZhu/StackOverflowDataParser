@@ -21,7 +21,7 @@ public class PostModel {
 	private String LastActivityDate;
 	private String Title;
 	private String Tags;
-	private String AnswerCount;
+	private Integer AnswerCount;
 	private String CommentCount;
 	private String FavoriteCount;
 	private String CommunityOwnedDate;
@@ -94,7 +94,7 @@ public class PostModel {
 		}
 		
 		if(AnswerCount != null) {
-			post.put(PostConstant.ANSWERCOUNT, AnswerCount);
+			post.put(PostConstant.ANSWERCOUNT, AnswerCount.toString());
 		}
 		
 		if(CommentCount != null) {
@@ -240,11 +240,11 @@ public class PostModel {
 		this.Tags = Tags;
 	}
 	
-	public String getAnswerCount() {
+	public Integer getAnswerCount() {
 		return AnswerCount;
 	}
 	
-	public void setAnswerCount(String AnswerCount) {
+	public void setAnswerCount(Integer AnswerCount) {
 		this.AnswerCount = AnswerCount;
 	}
 	

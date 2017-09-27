@@ -4,7 +4,7 @@ package StackOverflow.XMLParser.Posts.Test;
 import StackOverflow.XMLParser.Posts.Model.PostModel;
 import StackOverflow.XMLParser.Posts.Reader.PostsStaXParser;
 import StackOverflow.XMLParser.Posts.Reader.XMLPreprocess;
-import StackOverflow.XMLParser.Posts.Writer.PostsStaXWriterForSolr;
+import StackOverflow.XMLParser.Posts.Writer.*;
 
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
@@ -21,6 +21,7 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.List;
 
 public class TestPostsReader {
@@ -48,6 +49,7 @@ public class TestPostsReader {
 			// get the list of input files
 			File inputFolder = new File(inputDir);
 			File[] listOfInputFiles = inputFolder.listFiles();
+
 			
 			//check if output folder is empty
 			DirectoryStream<Path> dirStream = Files.newDirectoryStream(Paths.get(outputDir));
@@ -57,17 +59,19 @@ public class TestPostsReader {
 		    
 		    // create reader and writer
 			PostsStaXParser reader = new PostsStaXParser();
-			PostsStaXWriterForSolr writer = new PostsStaXWriterForSolr();
+			PostsDocManager docManager = new PostsDocManager(1000, outputDir);
 			
-			for(int i=0; i<listOfInputFiles.length; i++) {
-				if(listOfInputFiles[i].isFile()) {
-					System.out.println(listOfInputFiles[i].getAbsolutePath());
-					List<PostModel> postsModel = reader.readXML(listOfInputFiles[i].getAbsolutePath());
-					String outFileName = outputDir + listOfInputFiles[i].getName();
-					writer.setPosts(postsModel, outFileName);
-				}			
-				writer.WriteToSolrXML();		
+			for(Integer i=1; i<listOfInputFiles.length+1; i++) {
+				String fileName = inputDir+i.toString()+".xml";
+				List<PostModel> postsModel = reader.readXML(fileName);
+				for(PostModel postModel : postsModel) {
+					docManager.write(postModel);
+				}
 			}
+		
+			docManager.close();
+			
+
 
 		} catch (XMLStreamException e) {
 			e.printStackTrace();			

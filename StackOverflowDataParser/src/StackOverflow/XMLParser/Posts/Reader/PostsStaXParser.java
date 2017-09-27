@@ -95,7 +95,7 @@ public class PostsStaXParser {
                             	post.setTags(attributeValue);
                             }
                             else if(attributeName.equals(PostConstant.ANSWERCOUNT)) {
-                            	post.setAnswerCount(attributeValue);
+                            	post.setAnswerCount(Integer.parseInt(attributeValue));
                             }
                             else if(attributeName.equals(PostConstant.COMMENTCOUNT)) {
                             	post.setCommentCount(attributeValue);
