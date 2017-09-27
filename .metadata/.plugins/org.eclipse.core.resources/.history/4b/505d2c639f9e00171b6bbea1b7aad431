@@ -1,5 +1,0 @@
-package StackOverflow.XMLParser.Posts.Writer;
-
-public interface nodeGenerator {
-
-}

@@ -63,6 +63,9 @@ public class PostsDocManager {
 			if(questionTableInMem.containsKey(questionId)) {
 				QAModel qAModel = questionTableInMem.get(questionId);
 				qAModel.addPost(postModel);
+				if(questionId == 11) {
+					System.out.println("AnswerFromInMem "+qAModel.getIdentifiedAnswer().toString());
+				}
 			}
 			else {
 				// check if related question is written to disk. Flush the answer to related question
@@ -76,7 +79,10 @@ public class PostsDocManager {
 					QAModel qAModel = new QAModel(false, availableAnswer, savedAnswers);
 					qAModel.addPost(postModel);
 					questionTableInMem.put(questionId, qAModel);
-										
+					if(questionId == 11) {
+						System.out.println("AnswerRetrieveFromDisk "+qAModel.getIdentifiedAnswer().toString());
+					}
+					
 					savedAnswers++;
 					// All answers are saved to disk. Remove it from open question list.
 					if(savedAnswers >= availableAnswer) {
