@@ -63,7 +63,11 @@ public class QAModel {
 		}
 		hasQuestion = true;
 		
+		// In case that answer count field does not exist in a question, just give it a large number
 		availableAnswer = postModel.getAnswerCount();
+		if(availableAnswer == null) {
+			availableAnswer = 1000;
+		}
 		
 		Map<String, String> post = postModel.getPost();
 		for(Map.Entry<String, String> entry : post.entrySet()) {

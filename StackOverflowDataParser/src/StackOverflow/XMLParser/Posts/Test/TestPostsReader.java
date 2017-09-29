@@ -65,14 +65,14 @@ public class TestPostsReader {
 				String fileName = inputDir+i.toString()+".xml";
 				List<PostModel> postsModel = reader.readXML(fileName);
 				for(PostModel postModel : postsModel) {
-					docManager.write(postModel);
+					if(!postModel.hasFatalError()) {
+						docManager.write(postModel);				
+					}
 				}
 			}
 		
 			docManager.close();
 			
-
-
 		} catch (XMLStreamException e) {
 			e.printStackTrace();			
 		} catch (IOException e) {

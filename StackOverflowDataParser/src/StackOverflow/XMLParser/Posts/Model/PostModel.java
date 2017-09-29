@@ -26,6 +26,8 @@ public class PostModel {
 	private String FavoriteCount;
 	private String CommunityOwnedDate;
 	
+	private boolean fatalError = false;
+	
 	public Map<String, String> getPost() {
 		Map<String, String> post = new LinkedHashMap<>();
 		
@@ -112,19 +114,30 @@ public class PostModel {
 		return post;
 	}
 	
-	public int getId() {
+	// If Id or Post Type Id can not be parsed correctly, the post is useless. And it is recorded as fatal error.
+	public boolean hasFatalError() {
+		return fatalError;
+	}
+	
+	public Integer getId() {
 		return Id;
 	}
 	
 	public void setId(Integer Id) {
+		if(Id == null) {
+			fatalError = true;
+		}
 		this.Id = Id;
 	}
 	
-	public int getPostTypeId() {
+	public Integer getPostTypeId() {
 		return PostTypeId;
 	}
 	
 	public void setPostTypeId(Integer PostTypeId) {
+		if(PostTypeId == null) {
+			fatalError = true;
+		}
 		this.PostTypeId = PostTypeId;
 	}
 	

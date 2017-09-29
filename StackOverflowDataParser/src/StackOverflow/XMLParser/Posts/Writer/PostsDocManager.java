@@ -64,7 +64,7 @@ public class PostsDocManager {
 				QAModel qAModel = questionTableInMem.get(questionId);
 				qAModel.addPost(postModel);
 				if(questionId == 11) {
-					System.out.println("AnswerFromInMem "+qAModel.getIdentifiedAnswer().toString());
+					System.out.println("AnswerFromInMem "+ qAModel.getIdentifiedAnswer().toString());
 				}
 			}
 			else {
@@ -119,9 +119,7 @@ public class PostsDocManager {
 
 			Integer questionId = entry.getKey();
 			QAModel qAModel = entry.getValue();
-			
-	//		System.out.println(questionId);
-			
+				
 			if(qAModel.getHasQuestion() == true) {				
 				QAStaXWriterForSolr.createAndWriteToSolrXML(outputDir + questionId.toString(), qAModel);			
 			}
@@ -130,31 +128,33 @@ public class PostsDocManager {
 			}
 			
 			// In memory post is not complete and it is not recorded in open question table
-			if(qAModel.isComplete() == false && !openQuestionOnDisk.containsKey(questionId)) {
+			if(qAModel.isComplete() == false) {
 				// add or replace question table recorded for disk storage.
 				Integer answerParams[] = new Integer[2];
 				answerParams[0] = qAModel.getAvailableAnswer();
 				answerParams[1] = qAModel.getIdentifiedAnswer();
 				openQuestionOnDisk.put(questionId, answerParams);
-			}			
+			}	
+			else {
+				openQuestionOnDisk.remove(questionId);
+			}
 		}
 		
 		// reset parameters
 		questionTableInMem.clear();
 		slot = max;
-		
 	}
 	
 	// this is for a special case where we want to create a placeholder on disk, where question is not available, but answer appears in the list. 
 	private void flushToDisk(Integer questionId, QAModel qAModel) throws Exception {
+		// 
+		System.out.println("questionId directly flush to disk: "+questionId.toString());
 		QAStaXWriterForSolr.createAndWriteToSolrXML(outputDir + questionId.toString(), qAModel);	
 		Integer answerParams[] = new Integer[2];
 		answerParams[0] = 10000;
 		answerParams[1] = 1;		
 		openQuestionOnDisk.put(questionId, answerParams);
-	}
-	
-		
+	}		
 	
 /*	
 	public String getDynamicFieldName(String fieldName, Integer parentId) {

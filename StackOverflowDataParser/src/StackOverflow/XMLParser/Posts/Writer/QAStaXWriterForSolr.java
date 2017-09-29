@@ -85,7 +85,7 @@ public class QAStaXWriterForSolr {
         
 	// append answers to a XML
 	public static void appendToSolrXML(String fileName, QAModel qAModel) throws Exception {
-		System.out.println("append"+fileName);
+//		System.out.println("append"+fileName);
 		
         // First, create a new XMLInputFactory
         XMLInputFactory inputFactory = XMLInputFactory.newInstance();		
@@ -121,8 +121,6 @@ public class QAStaXWriterForSolr {
 		// create an EventFactory
 		XMLEventFactory eventFactory = XMLEventFactory.newInstance();
 		XMLEvent end = eventFactory.createDTD("\n");
-		
-
 		
 		for(XMLEvent event : eventList) {
 			eventWriter.add(event);
