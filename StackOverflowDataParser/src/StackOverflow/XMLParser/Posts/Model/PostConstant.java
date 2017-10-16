@@ -1,6 +1,7 @@
 package StackOverflow.XMLParser.Posts.Model;
 
 public class PostConstant {
+	
 	public static final String ID = "Id";
 	public static final String POSTTYPEID = "PostTypeId";	
 	public static final String PARENTID = "ParentId";
@@ -21,4 +22,16 @@ public class PostConstant {
 	public static final String COMMENTCOUNT = "CommentCount";
 	public static final String FAVORITECOUNT = "FavoriteCount";
 	public static final String COMMUNITYOWNEDDATE = "CommunityOwnedDate";
+	
+	public static final int QUESTION = 1;
+	public static final int ANSWER = 2;
+	public static final int ORPHANEDWIKI = 3;
+	public static final int TAGWIKIEXCERPT = 4;
+	public static final int TAGWIKI = 5;
+	public static final int NORMINATION = 6;
+	public static final int WIKIPLACEHOLDER = 7;
+	public static final int PRIVILEGEWIKI = 8;	
+	
 }
+
+

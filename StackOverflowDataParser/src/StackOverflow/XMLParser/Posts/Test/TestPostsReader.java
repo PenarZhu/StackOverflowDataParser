@@ -3,25 +3,17 @@ package StackOverflow.XMLParser.Posts.Test;
 
 import StackOverflow.XMLParser.Posts.Model.PostModel;
 import StackOverflow.XMLParser.Posts.Reader.PostsStaXParser;
-import StackOverflow.XMLParser.Posts.Reader.XMLPreprocess;
 import StackOverflow.XMLParser.Posts.Writer.*;
 
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.events.Attribute;
-import javax.xml.stream.events.EndElement;
-import javax.xml.stream.events.StartElement;
-import javax.xml.stream.events.XMLEvent;
+
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.List;
 
 public class TestPostsReader {
@@ -61,8 +53,10 @@ public class TestPostsReader {
 			PostsStaXParser reader = new PostsStaXParser();
 			PostsDocManager docManager = new PostsDocManager(1000, outputDir);
 			
-			for(Integer i=1; i<listOfInputFiles.length+1; i++) {
-				String fileName = inputDir+i.toString()+".xml";
+			for(Integer i=4500; i<listOfInputFiles.length+4500; i++) {
+				Integer nameNumber = i;
+				String fileName = inputDir+ nameNumber.toString()+".xml";
+				System.out.println(fileName);
 				List<PostModel> postsModel = reader.readXML(fileName);
 				for(PostModel postModel : postsModel) {
 					if(!postModel.hasFatalError()) {
@@ -77,16 +71,13 @@ public class TestPostsReader {
 			e.printStackTrace();			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	
-		
+			
 //		for(PostModel post : postsModel) {
 //			System.out.println(post);
 //		}
-		
 	}
 	
 }

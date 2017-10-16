@@ -5,31 +5,31 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class PostModel {	
-	private Integer Id;
-	private Integer PostTypeId;
-	private Integer ParentId;
-	private String AcceptedAnswerId;
-	private String CreationDate;
-	private String Score;
-	private String ViewCount;
-	private String Body;
-	private String OwnerUserId;
-	private String OwnerDisplayName;
-	private String LastEditorUserId;
-	private String LastEditorDisplayName;
-	private String LastEditDate;
-	private String LastActivityDate;
-	private String Title;
-	private String Tags;
-	private Integer AnswerCount;
-	private String CommentCount;
-	private String FavoriteCount;
-	private String CommunityOwnedDate;
+	private Integer Id = null;
+	private Integer PostTypeId = null;
+	private Integer ParentId = null;
+	private String AcceptedAnswerId = null;
+	private String CreationDate = null;
+	private String Score = null;
+	private String ViewCount = null;
+	private String Body = null;
+	private String OwnerUserId = null;
+	private String OwnerDisplayName = null;
+	private String LastEditorUserId = null;
+	private String LastEditorDisplayName = null;
+	private String LastEditDate = null;
+	private String LastActivityDate = null;
+	private String Title = null;
+	private String Tags = null;
+	private Integer AnswerCount = null;
+	private String CommentCount = null;
+	private String FavoriteCount = null;
+	private String CommunityOwnedDate = null;
 	
 	private boolean fatalError = false;
 	
 	public Map<String, String> getPost() {
-		Map<String, String> post = new LinkedHashMap<>();
+		Map<String, String> post = new LinkedHashMap<String, String>();
 		
 		if(Id!=null) {
 			post.put(PostConstant.ID, Id.toString());

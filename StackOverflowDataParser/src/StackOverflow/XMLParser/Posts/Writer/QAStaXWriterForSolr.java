@@ -5,10 +5,8 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.stream.XMLEventFactory;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLEventWriter;
@@ -23,7 +21,6 @@ import javax.xml.stream.events.XMLEvent;
 import javax.xml.stream.events.Attribute;
 
 import StackOverflow.XMLParser.Posts.Model.*;
-import StackOverflow.XMLParser.Posts.Writer.PostsDocManager;
 
 public class QAStaXWriterForSolr {
 	static final String DOC = "doc";
