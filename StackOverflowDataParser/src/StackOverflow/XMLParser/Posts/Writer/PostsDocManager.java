@@ -138,15 +138,15 @@ public class PostsDocManager {
 			try {
 				// Write tag directly to file. It does not have relationship with other posts. So it is not needed to buffer related Id in memory
 				if(qAModel.isTag() == true) {
-					QAStaXWriterForSolr.createAndWriteToSolrXML(outputDir + questionId.toString(), qAModel);							
+					QAStaXWriter.createAndWriteToSolrXML(outputDir + questionId.toString(), qAModel);							
 				}
 				// Write questions and answers to file.
 				else {
 					if(qAModel.getHasQuestion() == true) {
-						QAStaXWriterForSolr.createAndWriteToSolrXML(outputDir + questionId.toString(), qAModel);			
+						QAStaXWriter.createAndWriteToSolrXML(outputDir + questionId.toString(), qAModel);			
 					}
 					else {
-						QAStaXWriterForSolr.appendToSolrXML(outputDir + questionId.toString(), qAModel);
+						QAStaXWriter.appendToSolrXML(outputDir + questionId.toString(), qAModel);
 					}
 					
 					// In memory post is not complete and it is not recorded in open question table
@@ -177,7 +177,7 @@ public class PostsDocManager {
 	// this is for a special case where we want to create a placeholder on disk, where question is not available, but answer appears in the list. 
 	private void flushToDisk(Integer questionId, QAModel qAModel) throws Exception {
 		
-		QAStaXWriterForSolr.createAndWriteToSolrXML(outputDir + questionId.toString(), qAModel);	
+		QAStaXWriter.createAndWriteToSolrXML(outputDir + questionId.toString(), qAModel);	
 		Integer answerParams[] = new Integer[2];
 		answerParams[0] = 10000;
 		answerParams[1] = 1;		
